@@ -1,24 +1,25 @@
 %button {
 	display: inline-block;
 	width: auto;
-	padding: 0.75em 3em;
-	border: 1px solid rgba($color-black, 0.9);
-	border-radius: 6px;
-	font-size: 1.25em;
-	font-weight: 400;
-	line-height: 1.2;
-	color: $color-black;
+	padding: 0.75em 2em;
+	border: 1px solid $color-white;
+	border-radius: 1px;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1;
+	color: $color-white;
 	letter-spacing: 1px;
 	text-align: center;
-	background-color: rgba($color-black, 0.9);
+	background-color: transparent;
 	cursor: pointer;
 	text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: (4 / 24) * 1em;
 	transition: background-color 0.3s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
 
 	&:hover {
-		color: $color-black;
-		border-color: $color-black;
-		background-color: $color-black;
+		color: $color-green;
+		border-color: $color-green;
 	}
 
 	&:focus {

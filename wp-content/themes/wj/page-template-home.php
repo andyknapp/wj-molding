@@ -17,11 +17,9 @@ get_header();
         <div class="container-small">
             <h2 class="heading-1">Innovation in Injection Molding</h2>
             <p class="copy-1">With over 30 years of experience in custom injection molding, WJ Molding, Inc. is your source for high-quality, complex manufactured injection molded components. Our team combines expert advice in engineering and molding with innovative solutions, and the highest level of support to exceed your expectations, every time.</p>
-            <a href="<?php echo home_url(); ?>/injection-molding" class="text-link">Learn More</a>
         </div>
 
         <aside class="industries">
-            <h3 class="heading-3">Industries We Support</h3>
             <ul class="container-med">
                 <li>
                     <svg class="silo">
@@ -51,7 +49,17 @@ get_header();
         </aside>
     </section>
 
+    <section class="cta-block">
+        <a href="/contact" class="button">Request a quote</a>
+    </section>
 
+    <section class="closing">
+        <div class="closing-content">
+            <h3 class="heading-2">The WJ Molding Difference</h3>
+            <p class="copy-2">Our strategy of continuous improvement—in process, workforce, quality, and technology—allows us to pass that improvement onto your products and offer you competitive costs. We believe in quality, on-time delivery, and efficiency in that order.</p>
+            <a href="/about" class="text-link">Learn More</a>
+        </div>
+    </section>
 
 <?php
 

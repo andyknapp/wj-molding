@@ -1,0 +1,15 @@
+.site-footer {
+    display: flex;
+    position: relative;
+    color: $color-gray;
+    z-index: 1;
+    border-top: 1px solid $color-gray-med;
+
+    .footer-content {
+        margin: auto;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

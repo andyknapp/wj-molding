@@ -32,7 +32,12 @@
         </a>
 	</div>
 
-    <button class="menu-toggle no-button-style" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wj' ); ?></button>
+    <button class="menu-toggle no-button-style" aria-controls="primary-menu" aria-expanded="false">
+        <svg>
+            <use xlink:href="#icon-menu"></use>
+        </svg>
+        <span>Primary Menu</span>
+    </button>
 
     <nav id="site-navigation" class="site-nav">
         <?php

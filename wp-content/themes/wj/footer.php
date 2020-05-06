@@ -13,7 +13,9 @@
 </main><!-- #content -->
 
 <footer class="site-footer">
-    <span>&copy; <?php echo date('Y'); ?> WJ Molding Inc. </span>
+    <div class="footer-content">
+        <span>&copy; <?php echo date('Y'); ?> WJ Molding Inc. </span>
+    </div>
 </footer><!-- #colophon -->
 
 <?php
