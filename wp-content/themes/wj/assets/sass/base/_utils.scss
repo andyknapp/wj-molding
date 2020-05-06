@@ -1,0 +1,86 @@
+%visually-hidden {
+	// sass-lint:disable-block no-important
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+%reset-button {
+	border: 0;
+	cursor: pointer;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+%reset-link {
+	text-decoration: none;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+%reset-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+
+//sass-lint:disable no-ids
+%clear-header {
+	padding-top: $header-height;
+}
+
+// .offset-left {
+// 	@media (min-width: 60em) {
+// 		@include fluid-scale(margin-left, 60em, 80em, 1em, 11.5em);
+// 	}
+// }
+
+
+// flex box helpers
+%flex-parent-row {
+	display: flex;
+	flex-direction: row;
+}
+
+%flex-parent-col {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+// media stuff
+%fluid-wrapper,
+.fluid-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+
+	iframe,
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+// browser sync notification
+#__bs_notify__ {
+	padding: .25em !important;
+	font-size: .75em !important;
+	opacity: .25;
+}

@@ -1,0 +1,52 @@
+%button {
+	display: inline-block;
+	width: auto;
+	padding: 0.75em 3em;
+	border: 1px solid rgba($color-black, 0.9);
+	border-radius: 6px;
+	font-size: 1.25em;
+	font-weight: 400;
+	line-height: 1.2;
+	color: $color-black;
+	letter-spacing: 1px;
+	text-align: center;
+	background-color: rgba($color-black, 0.9);
+	cursor: pointer;
+	text-decoration: none;
+	transition: background-color 0.3s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
+
+	&:hover {
+		color: $color-black;
+		border-color: $color-black;
+		background-color: $color-black;
+	}
+
+	&:focus {
+		outline: 0;
+	}
+
+	// &:active {
+	// 	//background-color: $color-orange-pressed;
+	// }
+
+	// &[disabled],
+	// &.disabled {
+	// 	//background-color: $color-orange-disabled;
+	// }
+}
+
+.button,
+button:not(.no-button-style) { //sass-lint:disable-line force-pseudo-nesting
+	@extend %button;
+}
+
+
+.no-button-style {
+	border-width: 0;
+	padding: 0;
+	background-color: transparent;
+
+	&:focus {
+		outline: 0;
+	}
+}

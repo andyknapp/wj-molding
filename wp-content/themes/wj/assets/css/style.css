@@ -1,0 +1,897 @@
+/* ***********************************
+ *
+ *    Reset based on https://github.com/ireade/css/blob/master/base.scss
+ *
+ * *********************************** */
+/* Reset margin, padding, border
+ * *********************************** */
+/* line 10, ../sass/base/_reset.scss */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 37, ../sass/base/_reset.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 44, ../sass/base/_reset.scss */
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+/* line 52, ../sass/base/_reset.scss */
+body {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* line 58, ../sass/base/_reset.scss */
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Layout
+ * *********************************** */
+/* line 66, ../sass/base/_reset.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+/* line 76, ../sass/base/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 80, ../sass/base/_reset.scss */
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Elements
+ * *********************************** */
+/* line 88, ../sass/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 93, ../sass/base/_reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 98, ../sass/base/_reset.scss */
+img,
+video {
+  max-width: 100%;
+}
+
+/* line 103, ../sass/base/_reset.scss */
+img {
+  border-style: none;
+}
+
+/* line 107, ../sass/base/_reset.scss */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 112, ../sass/base/_reset.scss */
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+/* Attributes & states
+ * *********************************** */
+/* line 123, ../sass/base/_reset.scss */
+[hidden] {
+  display: none !important;
+}
+
+/* line 127, ../sass/base/_reset.scss */
+[disabled] {
+  cursor: not-allowed;
+}
+
+/* line 131, ../sass/base/_reset.scss */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* line 1, ../sass/base/_utils.scss */
+.skip-link {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* line 36, ../sass/base/_utils.scss */
+.site-content {
+  padding-top: 4em;
+}
+
+/* line 48, ../sass/base/_utils.scss */
+.gform_fields {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 61, ../sass/base/_utils.scss */
+.fluid-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+/* line 70, ../sass/base/_utils.scss */
+.fluid-wrapper iframe,
+.fluid-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 82, ../sass/base/_utils.scss */
+#__bs_notify__ {
+  padding: .25em !important;
+  font-size: .75em !important;
+  opacity: .25;
+}
+
+/* line 1, ../sass/base/_typography.scss */
+body, .heading-hero {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+/* line 6, ../sass/base/_typography.scss */
+.heading-1, .heading-2, .heading-4, .logo {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.heading-hero {
+  font-size: 3.25em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-hero {
+    font-size: calc(3.25em + 3 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-hero {
+    font-size: 6.25em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.heading-2 {
+  font-size: 3em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-2 {
+    font-size: calc(3em + 1.5 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-2 {
+    font-size: 4.5em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.heading-1 {
+  font-size: 1.75em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-1 {
+    font-size: calc(1.75em + 1.5 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-1 {
+    font-size: 3.25em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.logo {
+  font-size: 1.125em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .logo {
+    font-size: calc(1.125em + 0.375 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .logo {
+    font-size: 1.5em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.heading-4 {
+  font-size: 1.125em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-4 {
+    font-size: calc(1.125em + 0.625 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-4 {
+    font-size: 1.75em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.heading-3, .gform_confirmation_message,
+.copy-1 {
+  font-size: 1em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-3, .gform_confirmation_message,
+  .copy-1 {
+    font-size: calc(1em + 0.25 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .heading-3, .gform_confirmation_message,
+  .copy-1 {
+    font-size: 1.25em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+.hero-content p {
+  font-size: 0.875em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .hero-content p {
+    font-size: calc(0.875em + 0.25 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  .hero-content p {
+    font-size: 1.125em;
+  }
+}
+
+/* line 4, ../sass/base/_mixins.scss */
+select.orderby {
+  font-size: 0.75em;
+}
+@media screen and (min-width: 20em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  select.orderby {
+    font-size: calc(0.75em + 0.125 * (100vw - 20em) / 60);
+  }
+}
+@media screen and (min-width: 80em) {
+  /* line 4, ../sass/base/_mixins.scss */
+  select.orderby {
+    font-size: 0.875em;
+  }
+}
+
+/* line 74, ../sass/base/_typography.scss */
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #040910;
+}
+
+/* line 84, ../sass/base/_typography.scss */
+a {
+  color: #1def14;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+}
+/* line 89, ../sass/base/_typography.scss */
+a:hover, a:visited, a:active, a:focus {
+  outline: 0;
+}
+/* line 96, ../sass/base/_typography.scss */
+a:hover {
+  color: #040910;
+}
+
+/* line 101, ../sass/base/_typography.scss */
+.heading-1 {
+  margin-bottom: 0.5em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  line-height: 1;
+  color: #040910;
+}
+
+/* line 111, ../sass/base/_typography.scss */
+.heading-2 {
+  margin-bottom: 0.5em;
+  font-weight: 300;
+}
+
+/* line 118, ../sass/base/_typography.scss */
+.heading-3 {
+  margin-bottom: 0.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1666666667em;
+  color: #707070;
+}
+
+/* line 127, ../sass/base/_typography.scss */
+.heading-4 {
+  font-weight: 300;
+}
+
+/* line 135, ../sass/base/_typography.scss */
+.gform_confirmation_message,
+.copy-1 {
+  margin-bottom: 1em;
+  line-height: 1.35;
+}
+
+/* line 6, ../sass/_global.scss */
+[class*='container-'] {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 12, ../sass/_global.scss */
+.container-site {
+  max-width: 87.5em;
+}
+
+/* line 16, ../sass/_global.scss */
+.container-med {
+  max-width: 62.5em;
+}
+
+/* line 20, ../sass/_global.scss */
+.container-small {
+  max-width: 45em;
+}
+
+/* line 25, ../sass/_global.scss */
+.site-content {
+  min-height: 100%;
+  margin-bottom: -3em;
+}
+/* line 29, ../sass/_global.scss */
+.site-content::after {
+  content: '';
+  display: block;
+  height: 3em;
+}
+
+/* line 44, ../sass/_global.scss */
+.intro {
+  padding: 4em 1em;
+}
+@media (min-width: 40em) {
+  /* line 44, ../sass/_global.scss */
+  .intro {
+    padding: 8em 1em;
+  }
+}
+
+/* line 55, ../sass/_global.scss */
+.intro {
+  text-align: center;
+}
+
+/* line 60, ../sass/_global.scss */
+.industries {
+  padding: 2em 0;
+  background-color: #eee;
+}
+/* line 64, ../sass/_global.scss */
+.industries .heading-3 {
+  margin-bottom: 1em;
+}
+/* line 68, ../sass/_global.scss */
+.industries ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+/* line 74, ../sass/_global.scss */
+.industries li {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+/* line 79, ../sass/_global.scss */
+.industries li span {
+  line-height: 1;
+}
+/* line 84, ../sass/_global.scss */
+.industries svg {
+  display: block;
+  margin: 0 0.5em 0.5em 0;
+  fill: #1E583F;
+  font-size: 70%;
+}
+@media (min-width: 72em) {
+  /* line 84, ../sass/_global.scss */
+  .industries svg {
+    font-size: 80%;
+  }
+}
+/* line 95, ../sass/_global.scss */
+.industries .car,
+.industries .medical,
+.industries .silo {
+  width: 2.5em;
+  height: 2.5em;
+}
+/* line 102, ../sass/_global.scss */
+.industries .television {
+  width: 2.6875em;
+  height: 2.5em;
+}
+
+/* line 111, ../sass/_global.scss */
+.gform_fields {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 117, ../sass/_global.scss */
+.gfield:not(.flex-field) {
+  width: 100%;
+}
+
+/* line 121, ../sass/_global.scss */
+.flex-field {
+  width: calc(50% - 1em);
+}
+
+/* line 125, ../sass/_global.scss */
+.gfield_description,
+.validation_message {
+  padding: 0.25em 0 0.75em;
+  font-size: 70%;
+  color: red;
+  line-height: 1;
+}
+
+/* line 133, ../sass/_global.scss */
+.validation_error {
+  padding: 0.75em 0;
+  color: red;
+}
+
+/* line 138, ../sass/_global.scss */
+.gform_confirmation_message {
+  color: red;
+}
+
+/* line 143, ../sass/_global.scss */
+.gform_confirmation_message {
+  padding-top: 3em;
+}
+
+/* line 147, ../sass/_global.scss */
+.gfield {
+  margin-bottom: 1em;
+}
+
+/* line 153, ../sass/_global.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  border-width: 0;
+  border-color: transparent;
+}
+/* line 159, ../sass/_global.scss */
+img.alignleft {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+/* line 164, ../sass/_global.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 2em 2em;
+}
+/* line 169, ../sass/_global.scss */
+img.aligncenter {
+  float: none;
+  margin: 2em auto;
+}
+
+/* line 6, ../sass/components/_header.scss */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 2;
+  background-color: #12223F;
+  color: #fff;
+}
+
+/* line 47, ../sass/components/_header.scss */
+.menu-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #040910;
+  line-height: 1;
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  touch-action: manipulation;
+  cursor: pointer;
+  outline: -webkit-focus-ring-color 0;
+  transform: translateY(-50%);
+  transition: color 0.3s ease-out, border 0.3s ease-out;
+}
+/* line 63, ../sass/components/_header.scss */
+.menu-toggle.toggled {
+  color: #040910;
+  border-color: #707070;
+}
+
+/* line 70, ../sass/components/_header.scss */
+.site-nav {
+  position: absolute;
+  top: 4em;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.985);
+  transform: translateX(100%);
+  transform-origin: right center;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform, 0.3s ease-out;
+}
+/* line 84, ../sass/components/_header.scss */
+.site-nav.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* line 91, ../sass/components/_header.scss */
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2em 1em 0.5em;
+  text-align: center;
+}
+
+/* line 98, ../sass/components/_header.scss */
+.menu-item {
+  position: relative;
+  margin-bottom: 1.5em;
+  list-style: none;
+}
+/* line 118, ../sass/components/_header.scss */
+.menu-item a {
+  padding: 0.5em 0.25em;
+  color: #040910;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease;
+}
+/* line 127, ../sass/components/_header.scss */
+.menu-item:hover::after, .menu-item.active::after {
+  transform: scaleX(1);
+}
+/* line 131, ../sass/components/_header.scss */
+.menu-item:hover a, .menu-item.active a {
+  color: #040910;
+}
+
+@media (min-width: 57em) {
+  /* line 138, ../sass/components/_header.scss */
+  .menu-toggle {
+    display: none;
+  }
+}
+/* line 2, ../sass/components/_hero.scss */
+.hero {
+  display: flex;
+  position: relative;
+  height: 56.26vw;
+  max-height: 37.5em;
+  overflow: hidden;
+}
+/* line 9, ../sass/components/_hero.scss */
+.hero::before, .hero::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 20, ../sass/components/_hero.scss */
+.hero::before {
+  background: transparent url(../img/bg-drawing.jpg) no-repeat center/cover;
+  filter: blur(1px);
+}
+/* line 25, ../sass/components/_hero.scss */
+.hero::after {
+  background-color: rgba(18, 34, 63, 0.93);
+}
+
+/* line 30, ../sass/components/_hero.scss */
+.hero-content {
+  position: relative;
+  margin: auto;
+  padding: 0.5em;
+  z-index: 1;
+}
+/* line 36, ../sass/components/_hero.scss */
+.hero-content p {
+  color: #fff;
+  font-style: italic;
+}
+/* line 41, ../sass/components/_hero.scss */
+.hero-content p:nth-of-type(1) {
+  margin-bottom: 0.5em;
+}
+
+/* line 47, ../sass/components/_hero.scss */
+.heading-hero {
+  font-weight: 900;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 55, ../sass/components/_hero.scss */
+.heading-hero span {
+  display: block;
+  padding: 0 0.125em;
+}
+/* line 59, ../sass/components/_hero.scss */
+.heading-hero span.hero-a {
+  display: inline-block;
+  position: relative;
+  color: rgba(18, 34, 63, 0.93);
+  letter-spacing: -0.06em;
+  font-size: 90%;
+}
+/* line 66, ../sass/components/_hero.scss */
+.heading-hero span.hero-a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #1def14;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.6s linear 0.3s;
+}
+/* line 82, ../sass/components/_hero.scss */
+.heading-hero span.hero-b {
+  letter-spacing: 0.06em;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.242s ease-out 0.925s, transform 0.4s ease-out 0.75s;
+}
+/* line 91, ../sass/components/_hero.scss */
+.heading-hero.move .hero-a {
+  opacity: 1;
+}
+/* line 94, ../sass/components/_hero.scss */
+.heading-hero.move .hero-a::after {
+  transform: scaleX(1);
+}
+/* line 99, ../sass/components/_hero.scss */
+.heading-hero.move .hero-b {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* line 3, ../sass/components/_forms.scss */
+input, select, textarea {
+  width: 100%;
+  padding: 0.875em 1em;
+  border: 1px solid #040910;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #040910;
+  outline: none;
+  -webkit-appearance: none;
+  transition: border-color 0.2s ease-out;
+}
+/* line 17, ../sass/components/_forms.scss */
+input:focus, select:focus, textarea:focus {
+  border-color: #040910;
+}
+
+/* line 33, ../sass/base/_mixins.scss */
+input:-moz-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+/* line 34, ../sass/base/_mixins.scss */
+input::-moz-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+/* line 35, ../sass/base/_mixins.scss */
+input:-ms-input-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+/* line 36, ../sass/base/_mixins.scss */
+input::-webkit-input-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+
+/* line 32, ../sass/components/_forms.scss */
+select {
+  padding: 0.5em 2em 0.5em 1em;
+  color: #040910;
+  border-color: #707070;
+  border-radius: 4px;
+  background: #fff url("../icons/sort.svg") no-repeat calc(100% - 0.5em) center/9px 16px;
+  -moz-appearance: none;
+}
+/* line 41, ../sass/components/_forms.scss */
+select::-ms-expand {
+  display: none;
+}
+
+/* line 33, ../sass/base/_mixins.scss */
+textarea:-moz-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+/* line 34, ../sass/base/_mixins.scss */
+textarea::-moz-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+/* line 35, ../sass/base/_mixins.scss */
+textarea:-ms-input-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+/* line 36, ../sass/base/_mixins.scss */
+textarea::-webkit-input-placeholder {
+  font-size: 1em;
+  font-style: italic;
+  color: #707070;
+}
+
+/* line 1, ../sass/components/_buttons.scss */
+.button,
+button:not(.no-button-style) {
+  display: inline-block;
+  width: auto;
+  padding: 0.75em 3em;
+  border: 1px solid rgba(4, 9, 16, 0.9);
+  border-radius: 6px;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #040910;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: rgba(4, 9, 16, 0.9);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
+}
+/* line 18, ../sass/components/_buttons.scss */
+.button:hover,
+button:hover:not(.no-button-style) {
+  color: #040910;
+  border-color: #040910;
+  background-color: #040910;
+}
+/* line 24, ../sass/components/_buttons.scss */
+.button:focus,
+button:focus:not(.no-button-style) {
+  outline: 0;
+}
+
+/* line 44, ../sass/components/_buttons.scss */
+.no-button-style {
+  border-width: 0;
+  padding: 0;
+  background-color: transparent;
+}
+/* line 49, ../sass/components/_buttons.scss */
+.no-button-style:focus {
+  outline: 0;
+}
