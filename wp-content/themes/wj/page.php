@@ -15,24 +15,57 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<section class="hero hero-small">
+    <div class="hero-content">
+        <h1 class="heading-hero"><?php the_title(); ?></h1>
+    </div>
+</section>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+<section class="intro">
+    <div class="container-small">
+        <h2 class="heading-1">Innovation in Injection Molding</h2>
+        <p class="copy-1">With over 30 years of experience in custom injection molding, WJ Molding, Inc. is your source for high-quality, complex manufactured injection molded components. Our team combines expert advice in engineering and molding with innovative solutions, and the highest level of support to exceed your expectations, every time.</p>
+    </div>
 
-			get_template_part( 'template-parts/content', 'page' );
+    <aside class="industries">
+        <ul class="container-med">
+            <li>
+                <svg class="silo">
+                    <use xlink:href="#icon-silo"></use>
+                </svg>
+                <span class="heading-4">Agriculture</span>
+            </li>
+            <li>
+                <svg class="car">
+                    <use xlink:href="#icon-car"></use>
+                </svg>
+                <span class="heading-4">Automotive</span>
+            </li>
+            <li>
+                <svg class="television">
+                    <use xlink:href="#icon-television"></use>
+                </svg>
+                <span class="heading-4">Consumer</span>
+            </li>
+            <li>
+                <svg class="medical">
+                    <use xlink:href="#icon-medical"></use>
+                </svg>
+                <span class="heading-4">Medical</span>
+            </li>
+        </ul>
+    </aside>
+</section>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+<?php include('template-parts/cta-block.php'); ?>
 
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+<section class="closing">
+    <div class="closing-content">
+        <h3 class="heading-2">The WJ Molding Difference</h3>
+        <p class="copy-2">Our strategy of continuous improvement—in process, workforce, quality, and technology—allows us to pass that improvement onto your products and offer you competitive costs. We believe in quality, on-time delivery, and efficiency in that order.</p>
+        <a href="/about" class="text-link">Learn More</a>
+    </div>
+</section>
 
 <?php
-get_sidebar();
 get_footer();

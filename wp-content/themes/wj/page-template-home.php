@@ -49,9 +49,7 @@ get_header();
         </aside>
     </section>
 
-    <section class="cta-block">
-        <a href="/contact" class="button">Request a quote</a>
-    </section>
+    <?php include('template-parts/cta-block.php'); ?>
 
     <section class="closing">
         <div class="closing-content">
