@@ -835,7 +835,7 @@ img.aligncenter {
   height: 0.84em;
   z-index: -1;
   opacity: 1;
-  background-color: #1def14;
+  background-color: rgba(29, 239, 20, 0.9);
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.55s linear 0.3s;

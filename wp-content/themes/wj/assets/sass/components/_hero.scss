@@ -69,7 +69,7 @@
         height: (84 / 100) * 1em;
         z-index: -1;
         opacity: 1;
-        background-color: $color-green;
+        background-color: rgba($color-green, 0.9);
         transform: scaleX(0);
         transform-origin: left center;
         transition: transform 0.55s linear 0.3s;
