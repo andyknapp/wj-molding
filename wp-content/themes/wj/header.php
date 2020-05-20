@@ -27,9 +27,19 @@
 
 <header id="masthead" class="site-header">
 	<div class="logo-container">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
-            <span>WJ</span> Molding Inc.
-        </a>
+        <span class="screen-reader-text">WJ Molding Inc.</span>
+
+        <?php if( is_front_page() ) : ?>
+            <div class="logo">
+                <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo-2.svg'); ?>
+            </div>
+        <?php else : ?>
+
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
+                <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo.svg'); ?>
+            </a>
+        <?php endif; ?>
+
 	</div>
 
     <button class="menu-toggle no-button-style" aria-controls="primary-menu" aria-expanded="false">

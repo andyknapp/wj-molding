@@ -51,10 +51,11 @@ get_header();
 
     <?php include('template-parts/cta-block.php'); ?>
 
-    <section class="closing">
-        <div class="closing-content">
+    <section class="text-block closing gray-cone">
+        <div class="text-block-content">
             <h3 class="heading-2">The WJ Molding Difference</h3>
-            <p class="copy-2">Our strategy of continuous improvement—in process, workforce, quality, and technology—allows us to pass that improvement onto your products and offer you competitive costs. We believe in quality, on-time delivery, and efficiency in that order.</p>
+            <p class="copy-2">Our strategy of continuous improvement—in process, workforce, quality, and technology—allows us to pass that improvement onto your products and offer you competitive costs.</p>
+            <p class="copy-2">We believe in quality, on-time delivery, and efficiency in that order.</p>
             <a href="/about" class="text-link">Learn More</a>
         </div>
     </section>

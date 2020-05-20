@@ -117,7 +117,7 @@ a {
 }
 
 .heading-3 {
-    @extend %fs-20;
+    @extend %fs-24;
     margin-bottom: 0.5em;
     font-weight: 300;
     text-transform: uppercase;
@@ -129,6 +129,13 @@ a {
     @extend %font-heading;
     @extend %fs-24b;
     font-weight: 300;
+}
+
+.heading-hero-small {
+    @extend %fs-72;
+    color: $color-white;
+    font-weight: 700;
+    line-height: 1;
 }
 
 

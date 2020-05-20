@@ -15,7 +15,9 @@ function animatehero() {
     hero.classList.add('move');
 }
 
-window.addEventListener('load', animatehero);
+if( hero ) {
+    window.addEventListener('load', animatehero);
+}
 
 
 // navigation

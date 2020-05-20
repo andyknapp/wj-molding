@@ -17,9 +17,33 @@ get_header();
 
 <section class="hero hero-small">
     <div class="hero-content">
-        <h1 class="heading-hero"><?php the_title(); ?></h1>
+        <h1 class="heading-2">Precision Injection Molding</h1>
     </div>
 </section>
+
+<section class="text-block gray-cone">
+    <div class="text-block-content">
+        <h1 class="heading-2">Precision </br>Injection Molding</h1>
+        <p class="copy-2">As an industry leader in custom injection molding for over 30 years, we take pride in our reputation for delivering high-quality, tight-tolerance, injection molded products.</p>
+        <p class="copy-2">Our veteran engineers and manufactures bring experience with both engineering grade and commodity resins to meet your production needs and desired outcomes.</p>
+
+        <aside class="sub-section">
+            <h2 class="heading-3">Our Core Competencies</h2>
+            <ul>
+                <li>Straight Injection Molding</li>
+                <li>Insert Molding</li>
+                <li>Pre-Mold & Over Molding</li>
+                <li>Wire Harness Molding</li>
+                <li>Multi-Component Assembly</li>
+                <li>Sonic & Vibration Welding</li>
+                <li>Automation Development & Integration</li>
+            </ul>
+        </aside>
+
+    </div>
+</section>
+
+<?php include('template-parts/cta-block.php'); ?>
 
 <section class="intro">
     <div class="container-small">
@@ -57,15 +81,9 @@ get_header();
     </aside>
 </section>
 
-<?php include('template-parts/cta-block.php'); ?>
 
-<section class="closing">
-    <div class="closing-content">
-        <h3 class="heading-2">The WJ Molding Difference</h3>
-        <p class="copy-2">Our strategy of continuous improvement—in process, workforce, quality, and technology—allows us to pass that improvement onto your products and offer you competitive costs. We believe in quality, on-time delivery, and efficiency in that order.</p>
-        <a href="/about" class="text-link">Learn More</a>
-    </div>
-</section>
+
+
 
 <?php
 get_footer();
