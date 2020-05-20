@@ -26,39 +26,41 @@
 <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wj' ); ?></a>
 
 <header id="masthead" class="site-header">
-	<div class="logo-container">
-        <span class="screen-reader-text">WJ Molding Inc.</span>
+    <div class="container-site">
+        <div class="logo-container">
+            <span class="screen-reader-text">WJ Molding Inc.</span>
 
-        <?php if( is_front_page() ) : ?>
-            <div class="logo">
-                <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo-2.svg'); ?>
-            </div>
-        <?php else : ?>
+            <?php if( is_front_page() ) : ?>
+                <div class="logo">
+                    <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo-2.svg'); ?>
+                </div>
+            <?php else : ?>
 
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
-                <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo.svg'); ?>
-            </a>
-        <?php endif; ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
+                    <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo.svg'); ?>
+                </a>
+            <?php endif; ?>
 
-	</div>
+    	</div>
 
-    <button class="menu-toggle no-button-style" aria-controls="primary-menu" aria-expanded="false">
-        <svg>
-            <use xlink:href="#icon-menu"></use>
-        </svg>
-        <span>Primary Menu</span>
-    </button>
+        <button class="menu-toggle no-button-style" aria-controls="primary-menu" aria-expanded="false">
+            <svg>
+                <use xlink:href="#icon-menu"></use>
+            </svg>
+            <span>Primary Menu</span>
+        </button>
 
-    <nav id="site-navigation" class="site-nav">
-        <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'menu-1',
-                    'container' => '',
-                )
-            );
-        ?>
-    </nav><!-- #site-navigation -->
+        <nav id="site-navigation" class="site-nav">
+            <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'menu-1',
+                        'container' => '',
+                    )
+                );
+            ?>
+        </nav><!-- #site-navigation -->
+    </div>
 </header><!-- #masthead -->
 
 <main id="primary" class="site-content">

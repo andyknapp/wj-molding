@@ -8,9 +8,7 @@ $counter-scale: 1 / $scale;
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-end;
+
     width: 100%;
     height: $header-height;
     padding: 0 1em 0.5em;
@@ -18,6 +16,12 @@ $counter-scale: 1 / $scale;
     background-color: $color-blue;
     box-shadow: 0 1px 8px 2px rgba($color-black, 0.25);
 
+    .container-site {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        height: 100%;
+    }
 
     // &.scrolled {
     //     box-shadow: 0 1px 7px 0 rgba(170, 170, 170, 0.25);
