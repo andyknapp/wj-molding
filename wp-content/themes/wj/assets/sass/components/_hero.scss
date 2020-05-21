@@ -2,8 +2,10 @@
 .hero {
     display: flex;
     position: relative;
-    height: 56.26vw;
+    //height: 56.25vw;
+    height: 33vw;
     max-height: (500 / 16) * 1em;
+    min-height: (280 / 16) * 1em;
     overflow: hidden;
 
     &::before,
@@ -18,14 +20,17 @@
     }
 
     &::before {
-        background: transparent url(../img/wj-molding-200-ton-all-electric.jpg) no-repeat center bottom / cover;
-        //filter: blur(2px);
+        // background: transparent url(../img/wj-molding-200-ton-all-electric.jpg) no-repeat center bottom / cover;
+        background: transparent url(../img/wj-molding-machines.jpg) no-repeat right top / cover;
         filter: grayscale(90%) blur(2px);
         opacity: 0.65;
     }
 
     &::after {
-        background-color: rgba($color-blue-alt, 0.75);
+        background-color: rgba($color-blue, 0.75);
+        background: radial-gradient(
+            rgba($color-blue, 0.6),
+            rgba($color-blue, 0.9));
     }
 
 
@@ -102,10 +107,12 @@
         }
 
         &.hero-b {
+            padding-left: 2px;
             letter-spacing: (6 / 100) * 1em;
             opacity: 0;
-            transform: translateY(-100%);
-            transition: opacity 0.242s ease-out 0.925s, transform 0.4s ease-out 0.75s;
+            transform: translateY(0.125em) scale(0.975);
+            transform-origin: center bottom;
+            transition: opacity 0.65s $ease-out-cubic 0.75s, transform 0.4s $ease-out-cubic 0.75s;
         }
     }
 
@@ -121,7 +128,7 @@
 
         .hero-b {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0) scale(1);
         }
     }
 }
