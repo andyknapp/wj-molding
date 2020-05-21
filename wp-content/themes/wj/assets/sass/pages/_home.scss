@@ -41,7 +41,7 @@
     svg {
         display: block;
         margin: 0 auto 0.5em;
-        fill: rgba($color-blue, 0.9);
+        fill: $color-blue-alt;
         font-size: 70%;
 
         @media (min-width: $bp-small) {

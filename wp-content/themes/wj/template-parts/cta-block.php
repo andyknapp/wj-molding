@@ -1,3 +1,3 @@
-<section class="cta-block container-med">
+<section class="cta-block container-site">
     <a href="/contact" class="button">Request a quote</a>
 </section>

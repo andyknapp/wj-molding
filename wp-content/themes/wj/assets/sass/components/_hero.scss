@@ -18,13 +18,14 @@
     }
 
     &::before {
-        background: transparent url(../img/bg-drawing.jpg) no-repeat center 5% / cover;
-        filter: blur(1px);
-        opacity: 0.45;
+        background: transparent url(../img/wj-molding-200-ton-all-electric.jpg) no-repeat center bottom / cover;
+        //filter: blur(2px);
+        filter: grayscale(90%) blur(2px);
+        opacity: 0.65;
     }
 
     &::after {
-        background-color: rgba($color-blue, 0.88);
+        background-color: rgba($color-blue-alt, 0.75);
     }
 
 
