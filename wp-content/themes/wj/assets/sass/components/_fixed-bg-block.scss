@@ -1,0 +1,31 @@
+.fixed-bg-block {
+    display: flex;
+    height: (100 / 16) * 1em;
+    max-height: 30vw;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        display: block;
+        position: fixed;
+        top: $header-height;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 4em);
+        z-index: -1;
+        background: transparent url(../img/wj-molding-200-ton-all-electric.jpg);
+        background: transparent url(../img/wj-molding-machines.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        filter: blur(0.5px);
+    }
+
+    .button {
+        margin: auto;
+    }
+
+
+    @media (min-width: $bp-big) {
+        height: 10em;
+    }
+}

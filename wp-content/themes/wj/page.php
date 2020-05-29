@@ -43,7 +43,9 @@ get_header();
     </div>
 </section>
 
-<?php include('template-parts/cta-block.php'); ?>
+<?php //include('template-parts/cta-block.php'); ?>
+
+<?php include('template-parts/fixed-bg-button-block.php'); ?>
 
 <section class="intro">
     <div class="container-small">

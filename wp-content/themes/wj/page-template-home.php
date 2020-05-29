@@ -14,10 +14,12 @@ get_header();
     </section>
 
     <section class="intro">
-        <div class="container-small">
+        <header class="container-small">
             <h2 class="heading-1">Innovation in Injection Molding</h2>
             <p class="copy-1">With over 30 years of experience in custom injection molding, WJ Molding, Inc. is your source for high-quality, complex manufactured injection molded components. Our team combines expert advice in engineering and molding with innovative solutions, and the highest level of support to exceed your expectations, every time.</p>
-        </div>
+
+            <a href="<?php echo home_url(); ?>/injection-molding" class="text-link">Learn more about our injection molding process</a>
+        </header>
 
         <aside class="industries">
             <ul class="container-med">
@@ -49,7 +51,7 @@ get_header();
         </aside>
     </section>
 
-    <?php include('template-parts/cta-block.php'); ?>
+    <?php include('template-parts/fixed-bg-button-block.php'); ?>
 
     <section class="text-block closing gray-cone">
         <div class="text-block-content">

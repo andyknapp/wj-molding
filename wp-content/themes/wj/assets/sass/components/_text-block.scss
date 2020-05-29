@@ -3,6 +3,7 @@
     display: flex;
     position: relative;
     padding: 1em;
+    z-index: 2;
 
     &::before,
     &::after {
@@ -34,6 +35,7 @@
 
     &.closing {
         min-height: 70vh;
+        //transform: translateY(-$cta-height);
         background-color: $color-gray-light;
         background: linear-gradient(to bottom left, $color-gray-med, $color-white);
 
@@ -48,12 +50,14 @@
     }
 
     &.gray-cone {
+        //background-color: $color-gray-light;
+
         &::before {
             background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center / cover;
             filter: grayscale(1);
             opacity: 0.25;
         }
-        //
+
         // &::after {
         //     background-color: rgba($color-gray, 0.25);
         // }

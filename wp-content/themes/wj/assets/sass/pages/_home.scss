@@ -2,6 +2,11 @@
 .intro {
     @extend %pad;
     text-align: center;
+    background-color: white;
+
+    .intro-cta {
+        margin-top: 2em;
+    }
 }
 
 .industries {
@@ -30,7 +35,6 @@
 
         @media (min-width: $bp-small) {
             width: auto;
-            margin-bottom: 0;
         }
 
         span {

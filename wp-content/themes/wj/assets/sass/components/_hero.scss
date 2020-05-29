@@ -7,6 +7,7 @@
     max-height: (500 / 16) * 1em;
     min-height: (280 / 16) * 1em;
     overflow: hidden;
+    background-color: white;
 
     &::before,
     &::after {
@@ -111,7 +112,7 @@
             letter-spacing: (6 / 100) * 1em;
             opacity: 0;
             transform: translateY(0.125em) scale(0.975);
-            transform-origin: center bottom;
+            transform-origin: center;
             transition: opacity 0.65s $ease-out-cubic 0.75s, transform 0.4s $ease-out-cubic 0.75s;
         }
     }

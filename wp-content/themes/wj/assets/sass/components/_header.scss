@@ -200,7 +200,6 @@ $counter-scale: 1 / $scale;
             right: 0;
             width: calc(100% - 200px);
             height: auto;
-            padding-bottom: 0.125em;
             transform: translateX(0);
             background-color: transparent;
         }
@@ -220,7 +219,7 @@ $counter-scale: 1 / $scale;
             a {
                 font-size: 1em;
                 font-weight: 400;
-                border-bottom: 2px solid transparent;
+                border-bottom: 3px solid transparent;
                 transition: border 0.2s linear;
             }
 

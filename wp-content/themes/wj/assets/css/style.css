@@ -308,40 +308,40 @@ body, .heading-hero {
 
 /* line 4, ../sass/base/_mixins.scss */
 .gform_confirmation_message, .text-block li,
-.copy-1 {
+.copy-1, .button,
+button:not(.no-button-style) {
   font-size: 1em;
 }
 @media screen and (min-width: 20em) {
   /* line 4, ../sass/base/_mixins.scss */
   .gform_confirmation_message, .text-block li,
-  .copy-1 {
+  .copy-1, .button,
+  button:not(.no-button-style) {
     font-size: calc(1em + 0.25 * (100vw - 20em) / 60);
   }
 }
 @media screen and (min-width: 80em) {
   /* line 4, ../sass/base/_mixins.scss */
   .gform_confirmation_message, .text-block li,
-  .copy-1 {
+  .copy-1, .button,
+  button:not(.no-button-style) {
     font-size: 1.25em;
   }
 }
 
 /* line 4, ../sass/base/_mixins.scss */
-.hero-content p, .button,
-button:not(.no-button-style) {
+.hero-content p {
   font-size: 0.875em;
 }
 @media screen and (min-width: 20em) {
   /* line 4, ../sass/base/_mixins.scss */
-  .hero-content p, .button,
-  button:not(.no-button-style) {
+  .hero-content p {
     font-size: calc(0.875em + 0.25 * (100vw - 20em) / 60);
   }
 }
 @media screen and (min-width: 80em) {
   /* line 4, ../sass/base/_mixins.scss */
-  .hero-content p, .button,
-  button:not(.no-button-style) {
+  .hero-content p {
     font-size: 1.125em;
   }
 }
@@ -518,43 +518,36 @@ a:hover {
 .cta-block {
   position: relative;
   display: flex;
-  width: calc(100% - 2em);
+  width: 100%;
+  height: 8em;
   padding: 1em;
-  border-radius: 4px;
-  background-color: #23417a;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  transform: translateY(50%);
+  background-color: transparent;
+  transform: translateY(-4em);
   z-index: 1;
 }
-/* line 69, ../sass/_global.scss */
+/* line 68, ../sass/_global.scss */
 .cta-block .button {
   display: block;
   margin: auto;
 }
-@media (min-width: 40em) {
-  /* line 58, ../sass/_global.scss */
-  .cta-block {
-    padding: 2em 1em;
-  }
-}
 
-/* line 82, ../sass/_global.scss */
+/* line 97, ../sass/_global.scss */
 .gform_fields {
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-/* line 88, ../sass/_global.scss */
+/* line 103, ../sass/_global.scss */
 .gfield:not(.flex-field) {
   width: 100%;
 }
 
-/* line 92, ../sass/_global.scss */
+/* line 107, ../sass/_global.scss */
 .flex-field {
   width: calc(50% - 1em);
 }
 
-/* line 96, ../sass/_global.scss */
+/* line 111, ../sass/_global.scss */
 .gfield_description,
 .validation_message {
   padding: 0.25em 0 0.75em;
@@ -563,45 +556,45 @@ a:hover {
   line-height: 1;
 }
 
-/* line 104, ../sass/_global.scss */
+/* line 119, ../sass/_global.scss */
 .validation_error {
   padding: 0.75em 0;
   color: red;
 }
 
-/* line 109, ../sass/_global.scss */
+/* line 124, ../sass/_global.scss */
 .gform_confirmation_message {
   color: red;
 }
 
-/* line 114, ../sass/_global.scss */
+/* line 129, ../sass/_global.scss */
 .gform_confirmation_message {
   padding-top: 3em;
 }
 
-/* line 118, ../sass/_global.scss */
+/* line 133, ../sass/_global.scss */
 .gfield {
   margin-bottom: 1em;
 }
 
-/* line 124, ../sass/_global.scss */
+/* line 139, ../sass/_global.scss */
 img {
   max-width: 100%;
   height: auto;
   border-width: 0;
   border-color: transparent;
 }
-/* line 130, ../sass/_global.scss */
+/* line 145, ../sass/_global.scss */
 img.alignleft {
   float: left;
   margin: 0 2em 2em 0;
 }
-/* line 135, ../sass/_global.scss */
+/* line 150, ../sass/_global.scss */
 img.alignright {
   float: right;
   margin: 0 0 2em 2em;
 }
-/* line 140, ../sass/_global.scss */
+/* line 155, ../sass/_global.scss */
 img.aligncenter {
   float: none;
   margin: 2em auto;
@@ -782,18 +775,17 @@ img.aligncenter {
     right: 0;
     width: calc(100% - 200px);
     height: auto;
-    padding-bottom: 0.125em;
     transform: translateX(0);
     background-color: transparent;
   }
-  /* line 208, ../sass/components/_header.scss */
+  /* line 207, ../sass/components/_header.scss */
   .site-header .menu,
   .site-header.show .menu {
     padding: 0;
     flex-flow: row nowrap;
     justify-content: flex-end;
   }
-  /* line 214, ../sass/components/_header.scss */
+  /* line 213, ../sass/components/_header.scss */
   .site-header .menu-item,
   .site-header.show .menu-item {
     margin-bottom: 0;
@@ -801,15 +793,15 @@ img.aligncenter {
     opacity: 1;
     transform: translateX(0);
   }
-  /* line 220, ../sass/components/_header.scss */
+  /* line 219, ../sass/components/_header.scss */
   .site-header .menu-item a,
   .site-header.show .menu-item a {
     font-size: 1em;
     font-weight: 400;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: border 0.2s linear;
   }
-  /* line 229, ../sass/components/_header.scss */
+  /* line 228, ../sass/components/_header.scss */
   .site-header .menu-item:hover a, .site-header .menu-item.current-menu-item a,
   .site-header.show .menu-item:hover a,
   .site-header.show .menu-item.current-menu-item a {
@@ -825,8 +817,9 @@ img.aligncenter {
   max-height: 31.25em;
   min-height: 17.5em;
   overflow: hidden;
+  background-color: white;
 }
-/* line 11, ../sass/components/_hero.scss */
+/* line 12, ../sass/components/_hero.scss */
 .hero::before, .hero::after {
   content: '';
   display: block;
@@ -836,46 +829,46 @@ img.aligncenter {
   width: 100%;
   height: 100%;
 }
-/* line 22, ../sass/components/_hero.scss */
+/* line 23, ../sass/components/_hero.scss */
 .hero::before {
   background: transparent url(../img/wj-molding-machines.jpg) no-repeat right top/cover;
   filter: grayscale(90%) blur(2px);
   opacity: 0.65;
 }
-/* line 29, ../sass/components/_hero.scss */
+/* line 30, ../sass/components/_hero.scss */
 .hero::after {
   background-color: rgba(18, 34, 63, 0.75);
   background: radial-gradient(rgba(18, 34, 63, 0.6), rgba(18, 34, 63, 0.9));
 }
-/* line 37, ../sass/components/_hero.scss */
+/* line 38, ../sass/components/_hero.scss */
 .hero.hero-small {
   height: auto;
   padding: 4em 0;
 }
-/* line 41, ../sass/components/_hero.scss */
+/* line 42, ../sass/components/_hero.scss */
 .hero.hero-small .heading-2 {
   margin-bottom: 0;
   color: #f7f7f7;
 }
 
-/* line 49, ../sass/components/_hero.scss */
+/* line 50, ../sass/components/_hero.scss */
 .hero-content {
   position: relative;
   margin: auto;
   padding: 0.5em;
   z-index: 1;
 }
-/* line 55, ../sass/components/_hero.scss */
+/* line 56, ../sass/components/_hero.scss */
 .hero-content p {
   color: #f7f7f7;
   font-style: italic;
 }
-/* line 60, ../sass/components/_hero.scss */
+/* line 61, ../sass/components/_hero.scss */
 .hero-content p:nth-of-type(1) {
   margin-bottom: 0.5em;
 }
 
-/* line 66, ../sass/components/_hero.scss */
+/* line 67, ../sass/components/_hero.scss */
 .heading-hero {
   position: relative;
   font-weight: 900;
@@ -884,7 +877,7 @@ img.aligncenter {
   text-transform: uppercase;
   overflow: hidden;
 }
-/* line 76, ../sass/components/_hero.scss */
+/* line 77, ../sass/components/_hero.scss */
 .heading-hero::after {
   content: '';
   display: block;
@@ -900,12 +893,12 @@ img.aligncenter {
   transform-origin: left center;
   transition: transform 0.55s linear 0.3s;
 }
-/* line 92, ../sass/components/_hero.scss */
+/* line 93, ../sass/components/_hero.scss */
 .heading-hero span {
   display: block;
   padding: 0 0.125em;
 }
-/* line 96, ../sass/components/_hero.scss */
+/* line 97, ../sass/components/_hero.scss */
 .heading-hero span.hero-a {
   display: inline-block;
   position: relative;
@@ -916,25 +909,25 @@ img.aligncenter {
   transform: translateX(-2.5em);
   transition: opacity 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.35s, cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.6s linear 0.35s;
 }
-/* line 109, ../sass/components/_hero.scss */
+/* line 110, ../sass/components/_hero.scss */
 .heading-hero span.hero-b {
   padding-left: 2px;
   letter-spacing: 0.06em;
   opacity: 0;
   transform: translateY(0.125em) scale(0.975);
-  transform-origin: center bottom;
+  transform-origin: center;
   transition: opacity 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0.75s, transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0.75s;
 }
-/* line 120, ../sass/components/_hero.scss */
+/* line 121, ../sass/components/_hero.scss */
 .heading-hero.move::after {
   transform: scaleX(1);
 }
-/* line 124, ../sass/components/_hero.scss */
+/* line 125, ../sass/components/_hero.scss */
 .heading-hero.move .hero-a {
   opacity: 1;
   transform: translateX(0);
 }
-/* line 129, ../sass/components/_hero.scss */
+/* line 130, ../sass/components/_hero.scss */
 .heading-hero.move .hero-b {
   opacity: 1;
   transform: translateY(0) scale(1);
@@ -945,8 +938,9 @@ img.aligncenter {
   display: flex;
   position: relative;
   padding: 1em;
+  z-index: 2;
 }
-/* line 7, ../sass/components/_text-block.scss */
+/* line 8, ../sass/components/_text-block.scss */
 .text-block::before, .text-block::after {
   content: '';
   display: block;
@@ -956,7 +950,7 @@ img.aligncenter {
   width: 100%;
   height: 100%;
 }
-/* line 19, ../sass/components/_text-block.scss */
+/* line 20, ../sass/components/_text-block.scss */
 .text-block .text-block-content {
   width: 100%;
   max-width: 55em;
@@ -964,53 +958,87 @@ img.aligncenter {
   padding: 4em 0;
   z-index: 1;
 }
-/* line 29, ../sass/components/_text-block.scss */
+/* line 30, ../sass/components/_text-block.scss */
 .text-block li {
   margin-bottom: 0.5em;
 }
-/* line 35, ../sass/components/_text-block.scss */
+/* line 36, ../sass/components/_text-block.scss */
 .text-block.closing {
   min-height: 70vh;
   background-color: #eee;
   background: linear-gradient(to bottom left, #cbcbcb, #f7f7f7);
 }
-/* line 40, ../sass/components/_text-block.scss */
+/* line 42, ../sass/components/_text-block.scss */
 .text-block.closing .text-block-content {
   max-width: 42.5em;
 }
-/* line 44, ../sass/components/_text-block.scss */
+/* line 46, ../sass/components/_text-block.scss */
 .text-block.closing::before, .text-block.closing::after {
   height: calc(100% + 4em);
 }
-/* line 51, ../sass/components/_text-block.scss */
+/* line 55, ../sass/components/_text-block.scss */
 .text-block.gray-cone::before {
   background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.25;
 }
-/* line 63, ../sass/components/_text-block.scss */
+/* line 67, ../sass/components/_text-block.scss */
 .text-block.green-cone::before {
   background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.12;
 }
-/* line 69, ../sass/components/_text-block.scss */
+/* line 73, ../sass/components/_text-block.scss */
 .text-block.green-cone::after {
   background-color: rgba(29, 239, 20, 0.1);
 }
-/* line 77, ../sass/components/_text-block.scss */
+/* line 81, ../sass/components/_text-block.scss */
 .text-block .sub-section {
   padding: 2.5em 0;
 }
 @media (min-width: 57em) {
-  /* line 81, ../sass/components/_text-block.scss */
+  /* line 85, ../sass/components/_text-block.scss */
   .text-block .sub-section ul {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 86, ../sass/components/_text-block.scss */
+  /* line 90, ../sass/components/_text-block.scss */
   .text-block .sub-section li {
     width: 50%;
+  }
+}
+
+/* line 1, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block {
+  display: flex;
+  height: 6.25em;
+  max-height: 30vw;
+  overflow: hidden;
+}
+/* line 7, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 4em;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4em);
+  z-index: -1;
+  background: transparent url(../img/wj-molding-200-ton-all-electric.jpg);
+  background: transparent url(../img/wj-molding-machines.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(0.5px);
+}
+/* line 23, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block .button {
+  margin: auto;
+}
+@media (min-width: 72em) {
+  /* line 1, ../sass/components/_fixed-bg-block.scss */
+  .fixed-bg-block {
+    height: 10em;
   }
 }
 
@@ -1103,41 +1131,42 @@ textarea::-webkit-input-placeholder {
 button:not(.no-button-style) {
   display: inline-block;
   width: auto;
-  padding: 0.75em 2em;
-  border: 1px solid #f7f7f7;
+  padding: 1em 2.5em;
+  border: 1px solid #23417a;
   border-radius: 2px;
   font-weight: 600;
   line-height: 1;
   color: #f7f7f7;
   letter-spacing: 1px;
   text-align: center;
-  background-color: transparent;
+  background-color: #23417a;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1666666667em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
 }
-/* line 20, ../sass/components/_buttons.scss */
+/* line 21, ../sass/components/_buttons.scss */
 .button:hover,
 button:hover:not(.no-button-style) {
-  color: #12223F;
-  border-color: #f7f7f7;
-  background-color: #f7f7f7;
+  color: #1def14;
+  border-color: #12223F;
+  background-color: #1d3666;
 }
-/* line 26, ../sass/components/_buttons.scss */
+/* line 27, ../sass/components/_buttons.scss */
 .button:focus,
 button:focus:not(.no-button-style) {
   outline: 0;
 }
 
-/* line 46, ../sass/components/_buttons.scss */
+/* line 47, ../sass/components/_buttons.scss */
 .no-button-style {
   border-width: 0;
   padding: 0;
   background-color: transparent;
 }
-/* line 51, ../sass/components/_buttons.scss */
+/* line 52, ../sass/components/_buttons.scss */
 .no-button-style:focus {
   outline: 0;
 }
@@ -1149,12 +1178,13 @@ button:focus:not(.no-button-style) {
   color: #707070;
   z-index: 1;
   border-top: 1px solid #eee;
+  background-color: #f7f7f7;
 }
-/* line 8, ../sass/components/_footer.scss */
+/* line 9, ../sass/components/_footer.scss */
 .site-footer .footer-content {
   margin: auto;
 }
-/* line 12, ../sass/components/_footer.scss */
+/* line 13, ../sass/components/_footer.scss */
 .site-footer p {
   margin-bottom: 0;
 }
@@ -1162,29 +1192,34 @@ button:focus:not(.no-button-style) {
 /* line 2, ../sass/pages/_home.scss */
 .intro {
   text-align: center;
+  background-color: white;
+}
+/* line 7, ../sass/pages/_home.scss */
+.intro .intro-cta {
+  margin-top: 2em;
 }
 
-/* line 7, ../sass/pages/_home.scss */
+/* line 12, ../sass/pages/_home.scss */
 .industries {
   padding: 2em 0 0;
 }
-/* line 10, ../sass/pages/_home.scss */
+/* line 15, ../sass/pages/_home.scss */
 .industries .heading-3 {
   margin-bottom: 1em;
 }
-/* line 14, ../sass/pages/_home.scss */
+/* line 19, ../sass/pages/_home.scss */
 .industries ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 @media (min-width: 40em) {
-  /* line 14, ../sass/pages/_home.scss */
+  /* line 19, ../sass/pages/_home.scss */
   .industries ul {
     justify-content: space-around;
   }
 }
-/* line 24, ../sass/pages/_home.scss */
+/* line 29, ../sass/pages/_home.scss */
 .industries li {
   display: flex;
   flex-flow: column nowrap;
@@ -1193,17 +1228,16 @@ button:focus:not(.no-button-style) {
   margin-bottom: 2em;
 }
 @media (min-width: 40em) {
-  /* line 24, ../sass/pages/_home.scss */
+  /* line 29, ../sass/pages/_home.scss */
   .industries li {
     width: auto;
-    margin-bottom: 0;
   }
 }
-/* line 36, ../sass/pages/_home.scss */
+/* line 40, ../sass/pages/_home.scss */
 .industries li span {
   line-height: 1;
 }
-/* line 41, ../sass/pages/_home.scss */
+/* line 45, ../sass/pages/_home.scss */
 .industries svg {
   display: block;
   margin: 0 auto 0.5em;
@@ -1211,19 +1245,19 @@ button:focus:not(.no-button-style) {
   font-size: 70%;
 }
 @media (min-width: 40em) {
-  /* line 41, ../sass/pages/_home.scss */
+  /* line 45, ../sass/pages/_home.scss */
   .industries svg {
     margin: 0 0.5em 0.5em 0;
   }
 }
-/* line 52, ../sass/pages/_home.scss */
+/* line 56, ../sass/pages/_home.scss */
 .industries .car,
 .industries .medical,
 .industries .silo {
   width: 2.5em;
   height: 2.5em;
 }
-/* line 59, ../sass/pages/_home.scss */
+/* line 63, ../sass/pages/_home.scss */
 .industries .television {
   width: 2.6875em;
   height: 2.5em;
