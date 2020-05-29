@@ -4,7 +4,8 @@
     max-height: 30vw;
     overflow: hidden;
 
-    &::before {
+    &::before,
+    &::after {
         content: '';
         display: block;
         position: fixed;
@@ -13,11 +14,19 @@
         width: 100%;
         height: calc(100% - 4em);
         z-index: -1;
+    }
+
+    &::before {
         background: transparent url(../img/wj-molding-200-ton-all-electric.jpg);
         background: transparent url(../img/wj-molding-machines.jpg);
         background-attachment: fixed;
         background-size: cover;
         filter: blur(0.5px);
+    }
+
+    &::after {
+        background-color: $color-white;
+        opacity: 0.15;
     }
 
     .button {

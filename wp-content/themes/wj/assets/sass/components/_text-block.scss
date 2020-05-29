@@ -4,6 +4,8 @@
     position: relative;
     padding: 1em;
     z-index: 2;
+    background-color: $color-gray-light;
+    background: linear-gradient(to bottom left, $color-gray-med, $color-white);
 
     &::before,
     &::after {
@@ -23,6 +25,10 @@
         margin: auto;
         padding: 4em 0;
         z-index: 1;
+
+        .wide & {
+            max-width: 62em;
+        }
     }
 
 
@@ -35,7 +41,6 @@
 
     &.closing {
         min-height: 70vh;
-        //transform: translateY(-$cta-height);
         background-color: $color-gray-light;
         background: linear-gradient(to bottom left, $color-gray-med, $color-white);
 
@@ -50,17 +55,21 @@
     }
 
     &.gray-cone {
-        //background-color: $color-gray-light;
-
         &::before {
             background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center / cover;
             filter: grayscale(1);
             opacity: 0.25;
         }
+    }
 
-        // &::after {
-        //     background-color: rgba($color-gray, 0.25);
-        // }
+    &.gray-cone-b {
+        background: radial-gradient($color-white, $color-gray-med);
+
+        &::before {
+            background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center / cover;
+            filter: grayscale(1);
+            opacity: 0.125;
+        }
     }
 
     &.green-cone {

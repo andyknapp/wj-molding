@@ -436,34 +436,6 @@ a:hover {
   line-height: 1.35;
 }
 
-/* line 158, ../sass/base/_typography.scss */
-.text-link {
-  position: relative;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #040910;
-  letter-spacing: 0.2222222222em;
-}
-/* line 166, ../sass/base/_typography.scss */
-.text-link::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  bottom: 2px;
-  left: -1px;
-  z-index: -1;
-  background-color: #1def14;
-  transform: scaleX(1);
-  transform-origin: center bottom;
-  transition: transform 0.2s linear;
-}
-/* line 182, ../sass/base/_typography.scss */
-.text-link:hover::after {
-  transform: scaleY(2);
-}
-
 /* line 6, ../sass/_global.scss */
 [class*='container-'] {
   width: 100%;
@@ -510,7 +482,7 @@ a:hover {
 @media (min-width: 40em) {
   /* line 48, ../sass/_global.scss */
   .intro {
-    padding: 8em 1em 6em;
+    padding: 8em 1em 4em;
   }
 }
 
@@ -594,10 +566,45 @@ img.alignright {
   float: right;
   margin: 0 0 2em 2em;
 }
-/* line 155, ../sass/_global.scss */
+@media (min-width: 600px) {
+  /* line 150, ../sass/_global.scss */
+  img.alignright {
+    width: 40%;
+  }
+}
+/* line 159, ../sass/_global.scss */
 img.aligncenter {
   float: none;
   margin: 2em auto;
+}
+
+/* line 166, ../sass/_global.scss */
+.text-link {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #040910;
+  letter-spacing: 0.2222222222em;
+  z-index: 1;
+}
+/* line 175, ../sass/_global.scss */
+.text-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  position: absolute;
+  bottom: 2px;
+  left: -1px;
+  z-index: -1;
+  background-color: #1def14;
+  transform: scaleX(1);
+  transform-origin: center bottom;
+  transition: transform 0.25s linear;
+}
+/* line 191, ../sass/_global.scss */
+.text-link:hover::after {
+  transform: scaleY(4);
 }
 
 /* line 6, ../sass/components/_header.scss */
@@ -939,8 +946,10 @@ img.aligncenter {
   position: relative;
   padding: 1em;
   z-index: 2;
+  background-color: #eee;
+  background: linear-gradient(to bottom left, #cbcbcb, #f7f7f7);
 }
-/* line 8, ../sass/components/_text-block.scss */
+/* line 10, ../sass/components/_text-block.scss */
 .text-block::before, .text-block::after {
   content: '';
   display: block;
@@ -950,7 +959,7 @@ img.aligncenter {
   width: 100%;
   height: 100%;
 }
-/* line 20, ../sass/components/_text-block.scss */
+/* line 22, ../sass/components/_text-block.scss */
 .text-block .text-block-content {
   width: 100%;
   max-width: 55em;
@@ -958,51 +967,65 @@ img.aligncenter {
   padding: 4em 0;
   z-index: 1;
 }
-/* line 30, ../sass/components/_text-block.scss */
+/* line 29, ../sass/components/_text-block.scss */
+.wide .text-block .text-block-content {
+  max-width: 62em;
+}
+/* line 36, ../sass/components/_text-block.scss */
 .text-block li {
   margin-bottom: 0.5em;
 }
-/* line 36, ../sass/components/_text-block.scss */
+/* line 42, ../sass/components/_text-block.scss */
 .text-block.closing {
   min-height: 70vh;
   background-color: #eee;
   background: linear-gradient(to bottom left, #cbcbcb, #f7f7f7);
 }
-/* line 42, ../sass/components/_text-block.scss */
+/* line 47, ../sass/components/_text-block.scss */
 .text-block.closing .text-block-content {
   max-width: 42.5em;
 }
-/* line 46, ../sass/components/_text-block.scss */
+/* line 51, ../sass/components/_text-block.scss */
 .text-block.closing::before, .text-block.closing::after {
   height: calc(100% + 4em);
 }
-/* line 55, ../sass/components/_text-block.scss */
+/* line 58, ../sass/components/_text-block.scss */
 .text-block.gray-cone::before {
   background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.25;
 }
-/* line 67, ../sass/components/_text-block.scss */
+/* line 65, ../sass/components/_text-block.scss */
+.text-block.gray-cone-b {
+  background: radial-gradient(#f7f7f7, #cbcbcb);
+}
+/* line 68, ../sass/components/_text-block.scss */
+.text-block.gray-cone-b::before {
+  background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center/cover;
+  filter: grayscale(1);
+  opacity: 0.125;
+}
+/* line 76, ../sass/components/_text-block.scss */
 .text-block.green-cone::before {
   background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.12;
 }
-/* line 73, ../sass/components/_text-block.scss */
+/* line 82, ../sass/components/_text-block.scss */
 .text-block.green-cone::after {
   background-color: rgba(29, 239, 20, 0.1);
 }
-/* line 81, ../sass/components/_text-block.scss */
+/* line 90, ../sass/components/_text-block.scss */
 .text-block .sub-section {
   padding: 2.5em 0;
 }
 @media (min-width: 57em) {
-  /* line 85, ../sass/components/_text-block.scss */
+  /* line 94, ../sass/components/_text-block.scss */
   .text-block .sub-section ul {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 90, ../sass/components/_text-block.scss */
+  /* line 99, ../sass/components/_text-block.scss */
   .text-block .sub-section li {
     width: 50%;
   }
@@ -1016,7 +1039,7 @@ img.aligncenter {
   overflow: hidden;
 }
 /* line 7, ../sass/components/_fixed-bg-block.scss */
-.fixed-bg-block::before {
+.fixed-bg-block::before, .fixed-bg-block::after {
   content: '';
   display: block;
   position: fixed;
@@ -1025,13 +1048,21 @@ img.aligncenter {
   width: 100%;
   height: calc(100% - 4em);
   z-index: -1;
+}
+/* line 19, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block::before {
   background: transparent url(../img/wj-molding-200-ton-all-electric.jpg);
   background: transparent url(../img/wj-molding-machines.jpg);
   background-attachment: fixed;
   background-size: cover;
   filter: blur(0.5px);
 }
-/* line 23, ../sass/components/_fixed-bg-block.scss */
+/* line 27, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block::after {
+  background-color: #f7f7f7;
+  opacity: 0.15;
+}
+/* line 32, ../sass/components/_fixed-bg-block.scss */
 .fixed-bg-block .button {
   margin: auto;
 }
@@ -1203,23 +1234,29 @@ button:focus:not(.no-button-style) {
 .industries {
   padding: 2em 0 0;
 }
-/* line 15, ../sass/pages/_home.scss */
+@media (min-width: 57em) {
+  /* line 12, ../sass/pages/_home.scss */
+  .industries {
+    padding: 4em 0 0;
+  }
+}
+/* line 19, ../sass/pages/_home.scss */
 .industries .heading-3 {
   margin-bottom: 1em;
 }
-/* line 19, ../sass/pages/_home.scss */
+/* line 23, ../sass/pages/_home.scss */
 .industries ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 @media (min-width: 40em) {
-  /* line 19, ../sass/pages/_home.scss */
+  /* line 23, ../sass/pages/_home.scss */
   .industries ul {
     justify-content: space-around;
   }
 }
-/* line 29, ../sass/pages/_home.scss */
+/* line 33, ../sass/pages/_home.scss */
 .industries li {
   display: flex;
   flex-flow: column nowrap;
@@ -1228,16 +1265,16 @@ button:focus:not(.no-button-style) {
   margin-bottom: 2em;
 }
 @media (min-width: 40em) {
-  /* line 29, ../sass/pages/_home.scss */
+  /* line 33, ../sass/pages/_home.scss */
   .industries li {
     width: auto;
   }
 }
-/* line 40, ../sass/pages/_home.scss */
+/* line 44, ../sass/pages/_home.scss */
 .industries li span {
   line-height: 1;
 }
-/* line 45, ../sass/pages/_home.scss */
+/* line 49, ../sass/pages/_home.scss */
 .industries svg {
   display: block;
   margin: 0 auto 0.5em;
@@ -1245,19 +1282,19 @@ button:focus:not(.no-button-style) {
   font-size: 70%;
 }
 @media (min-width: 40em) {
-  /* line 45, ../sass/pages/_home.scss */
+  /* line 49, ../sass/pages/_home.scss */
   .industries svg {
     margin: 0 0.5em 0.5em 0;
   }
 }
-/* line 56, ../sass/pages/_home.scss */
+/* line 60, ../sass/pages/_home.scss */
 .industries .car,
 .industries .medical,
 .industries .silo {
   width: 2.5em;
   height: 2.5em;
 }
-/* line 63, ../sass/pages/_home.scss */
+/* line 67, ../sass/pages/_home.scss */
 .industries .television {
   width: 2.6875em;
   height: 2.5em;

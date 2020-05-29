@@ -21,9 +21,10 @@ get_header();
     </div>
 </section>
 
-<section class="text-block gray-cone">
+<section class="text-block gray-cone-b wide">
     <div class="text-block-content">
         <h1 class="heading-2">Precision </br>Injection Molding</h1>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/wj-molding-widget.jpg" alt="" class="alignright">
         <p class="copy-2">As an industry leader in custom injection molding for over 30 years, we take pride in our reputation for delivering high-quality, tight-tolerance, injection molded products.</p>
         <p class="copy-2">Our veteran engineers and manufactures bring experience with both engineering grade and commodity resins to meet your production needs and desired outcomes.</p>
 
