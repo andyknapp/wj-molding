@@ -1,16 +1,21 @@
 .site-footer {
     display: flex;
-    position: relative;
-    color: $color-gray;
-    z-index: 1;
+    justify-content: flex-end;
+    padding: 1em;
     border-top: 1px solid $color-gray-light;
-    background-color: $color-white;
+    background-color: white;
+    text-align: right;
 
     .footer-content {
-        margin: auto;
+        position: relative;
+        margin: auto 0;
+        z-index: 2;
     }
 
-    p {
+    p,
+    li {
+        @extend %fs-14;
         margin-bottom: 0;
+        line-height: 1.75;
     }
 }

@@ -48,17 +48,24 @@
             max-width: (680 / 16) * 1em;
         }
 
-        &::before,
+        &::before {
+            height: calc(100% + 5em);
+        }
+
         &::after {
-            height: calc(100% + 4em);
+            height: calc(100% + 10em);
         }
     }
 
     &.gray-cone {
         &::before {
-            background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center / cover;
+            background: transparent url(../img/bg-drawing-cone-b-small.jpg) no-repeat left bottom / cover;
             filter: grayscale(1);
             opacity: 0.25;
+
+            @media (min-width: $bp-med) {
+                background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center bottom / cover;
+            }
         }
     }
 

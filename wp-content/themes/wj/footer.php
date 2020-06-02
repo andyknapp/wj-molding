@@ -14,7 +14,12 @@
 
 <footer class="site-footer">
     <div class="footer-content">
-        <span>&copy; <?php echo date('Y'); ?> WJ Molding Inc. </span>
+        <p>&copy; <?php echo date('Y'); ?> WJ Molding Inc. </p>
+        <ul>
+            <li>915 Estes Ct</li>
+            <li>Schaumburg, IL 60193</li>
+            <li>800-PAT-CHEZ</li>
+        </ul>
     </div>
 </footer><!-- #colophon -->
 

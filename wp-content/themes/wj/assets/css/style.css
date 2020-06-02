@@ -347,18 +347,21 @@ button:not(.no-button-style) {
 }
 
 /* line 4, ../sass/base/_mixins.scss */
-select.orderby {
+select.orderby, .site-footer p,
+.site-footer li {
   font-size: 0.75em;
 }
 @media screen and (min-width: 20em) {
   /* line 4, ../sass/base/_mixins.scss */
-  select.orderby {
+  select.orderby, .site-footer p,
+  .site-footer li {
     font-size: calc(0.75em + 0.125 * (100vw - 20em) / 60);
   }
 }
 @media screen and (min-width: 80em) {
   /* line 4, ../sass/base/_mixins.scss */
-  select.orderby {
+  select.orderby, .site-footer p,
+  .site-footer li {
     font-size: 0.875em;
   }
 }
@@ -461,18 +464,18 @@ a:hover {
 /* line 25, ../sass/_global.scss */
 .site-content {
   min-height: 100%;
-  margin-bottom: -4em;
+  margin-bottom: -10em;
 }
 /* line 29, ../sass/_global.scss */
 .site-content::after {
   content: '';
   display: block;
-  height: 4em;
+  height: 10em;
 }
 
 /* line 44, ../sass/_global.scss */
 .site-footer {
-  height: 4em;
+  height: 10em;
 }
 
 /* line 48, ../sass/_global.scss */
@@ -986,46 +989,56 @@ img.aligncenter {
   max-width: 42.5em;
 }
 /* line 51, ../sass/components/_text-block.scss */
-.text-block.closing::before, .text-block.closing::after {
-  height: calc(100% + 4em);
+.text-block.closing::before {
+  height: calc(100% + 5em);
 }
-/* line 58, ../sass/components/_text-block.scss */
+/* line 55, ../sass/components/_text-block.scss */
+.text-block.closing::after {
+  height: calc(100% + 10em);
+}
+/* line 61, ../sass/components/_text-block.scss */
 .text-block.gray-cone::before {
-  background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center/cover;
+  background: transparent url(../img/bg-drawing-cone-b-small.jpg) no-repeat left bottom/cover;
   filter: grayscale(1);
   opacity: 0.25;
 }
-/* line 65, ../sass/components/_text-block.scss */
+@media (min-width: 50em) {
+  /* line 61, ../sass/components/_text-block.scss */
+  .text-block.gray-cone::before {
+    background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center bottom/cover;
+  }
+}
+/* line 72, ../sass/components/_text-block.scss */
 .text-block.gray-cone-b {
   background: radial-gradient(#f7f7f7, #cbcbcb);
 }
-/* line 68, ../sass/components/_text-block.scss */
+/* line 75, ../sass/components/_text-block.scss */
 .text-block.gray-cone-b::before {
   background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.125;
 }
-/* line 76, ../sass/components/_text-block.scss */
+/* line 83, ../sass/components/_text-block.scss */
 .text-block.green-cone::before {
   background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.12;
 }
-/* line 82, ../sass/components/_text-block.scss */
+/* line 89, ../sass/components/_text-block.scss */
 .text-block.green-cone::after {
   background-color: rgba(29, 239, 20, 0.1);
 }
-/* line 90, ../sass/components/_text-block.scss */
+/* line 97, ../sass/components/_text-block.scss */
 .text-block .sub-section {
   padding: 2.5em 0;
 }
 @media (min-width: 57em) {
-  /* line 94, ../sass/components/_text-block.scss */
+  /* line 101, ../sass/components/_text-block.scss */
   .text-block .sub-section ul {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 99, ../sass/components/_text-block.scss */
+  /* line 106, ../sass/components/_text-block.scss */
   .text-block .sub-section li {
     width: 50%;
   }
@@ -1205,19 +1218,23 @@ button:focus:not(.no-button-style) {
 /* line 1, ../sass/components/_footer.scss */
 .site-footer {
   display: flex;
-  position: relative;
-  color: #707070;
-  z-index: 1;
+  justify-content: flex-end;
+  padding: 1em;
   border-top: 1px solid #eee;
-  background-color: #f7f7f7;
+  background-color: white;
+  text-align: right;
 }
 /* line 9, ../sass/components/_footer.scss */
 .site-footer .footer-content {
-  margin: auto;
+  position: relative;
+  margin: auto 0;
+  z-index: 2;
 }
-/* line 13, ../sass/components/_footer.scss */
-.site-footer p {
+/* line 15, ../sass/components/_footer.scss */
+.site-footer p,
+.site-footer li {
   margin-bottom: 0;
+  line-height: 1.75;
 }
 
 /* line 2, ../sass/pages/_home.scss */
