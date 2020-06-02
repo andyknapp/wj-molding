@@ -38,6 +38,14 @@
         margin-bottom: 0.5em;
     }
 
+    &.plain {
+        background: linear-gradient(to top, $color-white, $color-gray-light);
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
 
     &.closing {
         min-height: 70vh;
@@ -88,6 +96,18 @@
 
         &::after {
             background-color: rgba($color-green, 0.1);
+        }
+    }
+
+    &.sub-page {
+        .heading-1 {
+            margin: 1em 0 0.35em;
+        }
+
+        .text-block-content {
+            @media (min-width: $bp-med) {
+                padding-top: 6em;
+            }
         }
     }
 

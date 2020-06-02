@@ -2,7 +2,6 @@
 .hero {
     display: flex;
     position: relative;
-    //height: 56.25vw;
     height: 33vw;
     max-height: (500 / 16) * 1em;
     min-height: (280 / 16) * 1em;
@@ -37,12 +36,22 @@
 
     &.hero-small {
         height: auto;
+        min-height: 0;
         padding: 4em 0;
 
         .heading-2 {
             margin-bottom: 0;
             color: $color-white;
+        }
 
+        &::before {
+            background: transparent url(../img/bg-drawing-hero-short.jpg) no-repeat center / cover;
+            filter: grayscale(90%) blur(1px);
+            opacity: 0.5;
+        }
+
+        &::after {
+            background: rgba($color-blue, 0.875);
         }
     }
 }
