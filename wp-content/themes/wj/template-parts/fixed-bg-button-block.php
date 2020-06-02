@@ -1,3 +1,3 @@
 <section class="fixed-bg-block">
-    <a href="/contact" class="button">Request a quote</a>
+    <a href="<?php echo home_url(); ?>/contact" class="button">Request a quote</a>
 </section>

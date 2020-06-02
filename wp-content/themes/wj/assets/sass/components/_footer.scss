@@ -18,4 +18,31 @@
         margin-bottom: 0;
         line-height: 1.75;
     }
+
+    p {
+        margin-bottom: 0.25em;
+    }
+
+
+    @media (min-width: $bp-nav) {
+        //justify-content: flex-end;
+        text-align: right;
+
+        .footer-content {
+            margin: auto 0;
+        }
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+
+            &:last-of-type {
+                &::before {
+                    content: ' | ';
+                    display: inline-block;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
 }

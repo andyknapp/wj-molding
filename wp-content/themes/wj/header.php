@@ -37,7 +37,7 @@
             <?php else : ?>
 
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="logo" rel="home">
-                    <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo.svg'); ?>
+                    <?php echo file_get_contents( get_template_directory() . '/assets/wj-logo-2.svg'); ?>
                 </a>
             <?php endif; ?>
 

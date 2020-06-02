@@ -32,7 +32,6 @@
     }
 
 
-
     li {
         @extend %copy-1;
         margin-bottom: 0.5em;
@@ -62,6 +61,13 @@
 
         &::after {
             height: calc(100% + 10em);
+        }
+
+        @media (min-width: $bp-nav) {
+            &::before,
+            &::after {
+                height: calc(100% + 5em);
+            }
         }
     }
 
@@ -100,6 +106,8 @@
     }
 
     &.sub-page {
+        padding-bottom: 2em;
+
         .heading-1 {
             margin: 1em 0 0.35em;
         }
@@ -109,13 +117,18 @@
                 padding-top: 6em;
             }
         }
+
+        .button {
+            margin: 2em 0 0;
+            box-shadow: none;
+        }
     }
 
 
 
 
     .sub-section {
-        padding: 2.5em 0;
+        padding: 2.5em 0 1em;
 
         @media (min-width: $bp-nav) {
             ul {

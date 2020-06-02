@@ -32,24 +32,28 @@
 		height: $footer-height;
 	}
 
-    // @media (min-width: $bp-nav) {
-    //     margin-bottom: - $footer-height-2;
-    //
-    //     &::after {
-    //         height: $footer-height-2;
-    //     }
-    // }
+    @media (min-width: $bp-nav) {
+        margin-bottom: - $footer-height-2;
+
+        &::after {
+            height: $footer-height-2;
+        }
+    }
 }
 
 .site-footer {
     height: $footer-height;
+
+    @media (min-width: $bp-nav) {
+        height: $footer-height-2;
+    }
 }
 
 %pad {
     padding: 4em 1em;
 
     @media (min-width: $bp-small) {
-        padding: 8em 1em 4em;
+        padding: 8em 1em 6em;
     }
 }
 

@@ -13,7 +13,7 @@
 </main><!-- #content -->
 
 <footer class="site-footer">
-    <div class="footer-content">
+    <div class="footer-content container-site">
         <p>&copy; <?php echo date('Y'); ?> WJ Molding Inc. </p>
         <ul>
             <li>915 Estes Ct</li>

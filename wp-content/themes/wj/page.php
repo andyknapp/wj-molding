@@ -46,12 +46,10 @@ get_header();
 
         <h3 class="heading-1">Equipment</h3>
         <p class="copy-1">WJ Molding currently offers tonnage ranging from 80 to 250 horizontal and 80-ton vertical rotary. All machines have dedicated equipment, including grinders, dryers, and sprue pickers. </p>
+
+        <a href="<?php echo home_url(); ?>/contact" class="button">Request a quote</a>
     </div>
 </section>
-
-<?php //include('template-parts/cta-block.php'); ?>
-
-<?php //include('template-parts/fixed-bg-button-block.php'); ?>
 
 
 <?php
