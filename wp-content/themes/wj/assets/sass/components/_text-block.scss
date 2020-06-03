@@ -78,7 +78,7 @@
             opacity: 0.25;
 
             @media (min-width: $bp-med) {
-                background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center bottom / cover;
+                background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center bottom / cover;
             }
         }
     }
@@ -102,6 +102,15 @@
 
         &::after {
             background-color: rgba($color-green, 0.1);
+        }
+    }
+
+    &.small-cone {
+        &::before {
+            width: 25%;
+            background: transparent url(../img/bg-drawing-c.jpg) no-repeat left bottom / contain;
+            filter: grayscale(1);
+            opacity: 0.12;
         }
     }
 

@@ -1046,7 +1046,7 @@ img.aligncenter {
 @media (min-width: 50em) {
   /* line 75, ../sass/components/_text-block.scss */
   .text-block.gray-cone::before {
-    background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center bottom/cover;
+    background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center bottom/cover;
   }
 }
 /* line 86, ../sass/components/_text-block.scss */
@@ -1069,36 +1069,43 @@ img.aligncenter {
 .text-block.green-cone::after {
   background-color: rgba(29, 239, 20, 0.1);
 }
-/* line 108, ../sass/components/_text-block.scss */
+/* line 109, ../sass/components/_text-block.scss */
+.text-block.small-cone::before {
+  width: 25%;
+  background: transparent url(../img/bg-drawing-c.jpg) no-repeat left bottom/contain;
+  filter: grayscale(1);
+  opacity: 0.12;
+}
+/* line 117, ../sass/components/_text-block.scss */
 .text-block.sub-page {
   padding-bottom: 2em;
 }
-/* line 111, ../sass/components/_text-block.scss */
+/* line 120, ../sass/components/_text-block.scss */
 .text-block.sub-page .heading-1 {
   margin: 1em 0 0.35em;
 }
 @media (min-width: 50em) {
-  /* line 115, ../sass/components/_text-block.scss */
+  /* line 124, ../sass/components/_text-block.scss */
   .text-block.sub-page .text-block-content {
     padding-top: 6em;
   }
 }
-/* line 121, ../sass/components/_text-block.scss */
+/* line 130, ../sass/components/_text-block.scss */
 .text-block.sub-page .button {
   margin: 2em 0 0;
   box-shadow: none;
 }
-/* line 130, ../sass/components/_text-block.scss */
+/* line 139, ../sass/components/_text-block.scss */
 .text-block .sub-section {
   padding: 2.5em 0 1em;
 }
 @media (min-width: 57em) {
-  /* line 134, ../sass/components/_text-block.scss */
+  /* line 143, ../sass/components/_text-block.scss */
   .text-block .sub-section ul {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 139, ../sass/components/_text-block.scss */
+  /* line 148, ../sass/components/_text-block.scss */
   .text-block .sub-section li {
     width: 50%;
   }
@@ -1124,8 +1131,7 @@ img.aligncenter {
 }
 /* line 19, ../sass/components/_fixed-bg-block.scss */
 .fixed-bg-block::before {
-  background: transparent url(../img/wj-molding-200-ton-all-electric.jpg);
-  background: transparent url(../img/wj-molding-machines.jpg);
+  background: transparent url(../img/wj-molding-250-ton-all-electric.jpg);
   background-attachment: fixed;
   background-size: cover;
   filter: blur(0.5px);
@@ -1138,6 +1144,12 @@ img.aligncenter {
 /* line 32, ../sass/components/_fixed-bg-block.scss */
 .fixed-bg-block .button {
   margin: auto;
+}
+/* line 36, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block.big {
+  height: 66.67vh;
+  height: calc(100vh - 10em);
+  max-height: none;
 }
 @media (min-width: 72em) {
   /* line 1, ../sass/components/_fixed-bg-block.scss */
@@ -1240,10 +1252,10 @@ button:not(.no-button-style) {
   border-radius: 2px;
   font-weight: 600;
   line-height: 1;
-  color: #f7f7f7;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #23417a;
+  color: #1def14;
+  background-color: #1d3666;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
@@ -1254,23 +1266,37 @@ button:not(.no-button-style) {
 /* line 21, ../sass/components/_buttons.scss */
 .button:hover,
 button:hover:not(.no-button-style) {
-  color: #1def14;
-  border-color: #12223F;
-  background-color: #1d3666;
+  color: #f7f7f7;
+  border-color: #23417a;
+  background-color: #23417a;
 }
 /* line 27, ../sass/components/_buttons.scss */
 .button:focus,
 button:focus:not(.no-button-style) {
   outline: 0;
 }
+/* line 31, ../sass/components/_buttons.scss */
+.button-alt.button,
+button.button-alt:not(.no-button-style) {
+  color: #f7f7f7;
+  border-color: #23417a;
+  background-color: #23417a;
+}
+/* line 36, ../sass/components/_buttons.scss */
+.button-alt.button:hover,
+button.button-alt:hover:not(.no-button-style) {
+  color: #1def14;
+  border-color: #1d3666;
+  background-color: #1d3666;
+}
 
-/* line 47, ../sass/components/_buttons.scss */
+/* line 58, ../sass/components/_buttons.scss */
 .no-button-style {
   border-width: 0;
   padding: 0;
   background-color: transparent;
 }
-/* line 52, ../sass/components/_buttons.scss */
+/* line 63, ../sass/components/_buttons.scss */
 .no-button-style:focus {
   outline: 0;
 }

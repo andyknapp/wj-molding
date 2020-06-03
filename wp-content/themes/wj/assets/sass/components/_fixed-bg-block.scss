@@ -17,8 +17,8 @@
     }
 
     &::before {
-        background: transparent url(../img/wj-molding-200-ton-all-electric.jpg);
-        background: transparent url(../img/wj-molding-machines.jpg);
+        background: transparent url(../img/wj-molding-250-ton-all-electric.jpg);
+        //background: transparent url(../img/wj-molding-machines.jpg);
         background-attachment: fixed;
         background-size: cover;
         filter: blur(0.5px);
@@ -31,6 +31,12 @@
 
     .button {
         margin: auto;
+    }
+
+    &.big {
+        height: 66.67vh;
+        height: calc(100vh - 10em);
+        max-height: none;
     }
 
 
