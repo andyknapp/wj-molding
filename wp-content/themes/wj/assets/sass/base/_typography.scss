@@ -25,6 +25,10 @@
 	@include fluid-scale(font-size, 20em, 80em, 2.625em, 3.875em);
 }
 
+%fs-58 {
+	@include fluid-scale(font-size, 20em, 80em, 2.25em, 3.625em);
+}
+
 %fs-52 {
 	@include fluid-scale(font-size, 20em, 80em, 1.75em, 3.25em);
 }
@@ -100,8 +104,8 @@ a {
 
 .heading-1 {
     @extend %font-heading;
-    @extend %fs-52;
-    margin-bottom: 0.5em;
+    @extend %fs-58;
+    margin-bottom: 0.55em;
     letter-spacing: -0.015em;
     font-weight: 700;
     line-height: 1;
@@ -142,9 +146,9 @@ a {
 
 %copy-1,
 .copy-1 {
-    @extend %fs-20;
+    @extend %fs-22;
     margin-bottom: 1em;
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
 %copy-2,
@@ -152,4 +156,10 @@ a {
     @extend %fs-24b;
     margin-bottom: 1em;
     line-height: 1.35;
+}
+
+figcaption {
+    @extend %fs-14;
+    padding: 0 0.125em;
+    color: $color-gray;
 }

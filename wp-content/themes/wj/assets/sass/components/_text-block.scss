@@ -18,6 +18,32 @@
         height: 100%
     }
 
+    .text-block-header {
+        @media (min-width: $bp-small) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            figure {
+                width: 40%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header-content {
+                width: 60%;
+                padding: 0 2em 0 0;
+            }
+        }
+
+        @media (min-width: $bp-big) {
+            .header-content {
+                padding-right: 5em;
+            }
+        }
+    }
+
 
     .text-block-content {
         width: 100%;
@@ -25,9 +51,17 @@
         margin: auto;
         padding: 4em 0;
         z-index: 1;
+    }
 
-        .wide & {
-            max-width: 62em;
+    &.wide {
+        .text-block-content {
+            max-width: 64em;
+        }
+
+        .text-block-body {
+            width: 100%;
+            max-width: 60em;
+            margin: 0 auto;
         }
     }
 
@@ -93,17 +127,17 @@
         }
     }
 
-    &.green-cone {
-        &::before {
-            background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center / cover;
-            filter: grayscale(1);
-            opacity: 0.12;
-        }
-
-        &::after {
-            background-color: rgba($color-green, 0.1);
-        }
-    }
+    // &.green-cone {
+    //     &::before {
+    //         background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center / cover;
+    //         filter: grayscale(1);
+    //         opacity: 0.12;
+    //     }
+    //
+    //     &::after {
+    //         background-color: rgba($color-green, 0.1);
+    //     }
+    // }
 
     &.small-cone {
         &::before {
@@ -139,7 +173,32 @@
     .sub-section {
         padding: 2.5em 0 1em;
 
-        @media (min-width: $bp-nav) {
+        .heading-3 {
+            border-bottom: 1px solid $color-gray-med;
+        }
+
+        ul {
+            padding: 0.5em 0.5em 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1em;
+
+            &::before {
+                content: '\2022';
+                display: inline-block;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                font-size: 120%;
+                transform: translateY( calc(-50% - 2px) );
+                color: $color-gray;
+            }
+        }
+
+
+        @media (min-width: $bp-small) {
             ul {
                 display: flex;
                 flex-flow: row wrap;
@@ -148,6 +207,11 @@
             li {
                 width: 50%;
             }
+        }
+
+
+        @media (min-width: $bp-big) {
+            padding-top: 5em;
         }
     }
 }

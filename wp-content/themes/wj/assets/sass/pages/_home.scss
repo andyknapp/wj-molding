@@ -4,8 +4,33 @@
     text-align: center;
     background-color: white;
 
-    .intro-cta {
-        margin-top: 2em;
+    p {
+        a {
+            display: inline-block;
+            margin-left: 0.25em;
+
+            &::after {
+                content: '\2192';
+                display: inline-block;
+                color: $color-green;
+                vertical-align: middle;
+                transform: translateX(0.1em);
+                transition: transform 0.2s ease-out, color 0.2s ease-out;
+            }
+
+            &:hover {
+                color: $color-black-2;
+
+                &::after {
+                    transform: translateX(0.35em);
+                }
+            }
+        }
+
+
+        @media (min-width: $bp-big) {
+            padding: 0 2em;
+        }
     }
 }
 
