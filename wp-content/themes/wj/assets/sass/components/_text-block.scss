@@ -23,12 +23,15 @@
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
-            align-items: center;
 
             figure {
                 width: 40%;
                 margin: 0;
                 padding: 0;
+            }
+
+            .copy-2 {
+                margin: 1em 0 0;
             }
 
             .header-content {

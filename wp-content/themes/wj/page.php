@@ -17,23 +17,58 @@ get_header();
 
 <section class="hero hero-small">
     <div class="hero-content">
-        <h1 class="heading-2">Precision Injection Molding</h1>
+
+        <?php
+            if( get_field( 'custom_title' ) ) {
+                $title = get_field('custom_title');
+            } else {
+                $title = get_the_title();
+            }
+        ?>
+
+        <h1 class="heading-2"><?php echo $title; ?></h1>
     </div>
 </section>
 
 <section class="text-block plain wide sub-page">
     <div class="text-block-content">
-        <header class="text-block-header">
-            <div class="header-content">
-                <p class="copy-2"><span>As</span> an industry leader in custom injection molding for over 30 years, we take pride in our reputation for delivering high-quality, tight-tolerance, injection molded products.</p>
-                <p class="copy-2">Our veteran engineers and manufactures bring experience with both engineering grade and commodity resins to meet your production needs and desired outcomes.</p>
-            </div>
 
-            <figure>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/wj-molding-widget.jpg" alt="">
-                <figcaption>Do you like captions, Brian?</figcaption>
-            </figure>
-        </header>
+        <?php if( have_rows( 'intro' ) ) : ?>
+            <?php while( have_rows( 'intro' ) ) : the_row(); ?>
+
+            <?php
+                $copy = get_sub_field('copy');
+                $img_id = get_sub_field('image');
+                $attachment = get_post( $img_id );
+                $caption = $attachment->post_excerpt;
+            ?>
+
+                <header class="text-block-header">
+                    <div class="header-content">
+                        <p class="copy-2"><?php echo $copy; ?></p>
+                    </div>
+
+                    <?php if( $img_id ) : ?>
+
+                        <figure>
+                            <?php echo wp_get_attachment_image( $img_id, 'full' ); ?>
+
+                            <?php if ( $caption ) : ?>
+
+                                <figcaption>
+                                    <?php echo $caption; ?>
+                                </figcaption>
+
+                            <?php endif; ?>
+                        </figure>
+
+                    <?php endif; ?>
+
+                </header>
+
+            <?php endwhile; ?>
+        <?php endif; ?>
+
 
         <div class="text-block-body">
             <aside class="sub-section">
