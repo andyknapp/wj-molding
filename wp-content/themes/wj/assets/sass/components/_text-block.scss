@@ -184,19 +184,33 @@
             padding: 0.5em 0.5em 0;
         }
 
-        li {
-            position: relative;
-            padding-left: 1em;
+        &:not(.contact-info) {
+            li {
+                position: relative;
+                padding-left: 1em;
 
-            &::before {
-                content: '\2022';
-                display: inline-block;
-                position: absolute;
-                left: 0;
-                top: 50%;
-                font-size: 120%;
-                transform: translateY( calc(-50% - 2px) );
-                color: $color-gray;
+                &::before {
+                    content: '\2022';
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    font-size: 120%;
+                    transform: translateY( calc(-50% - 2px) );
+                    color: $color-gray;
+                }
+            }
+        }
+
+        &.contact-info {
+            margin-bottom: 1em;
+
+            a {
+                color: $color-black;
+
+                &:hover {
+                    color: $color-blue-alt;
+                }
             }
         }
 
@@ -210,11 +224,60 @@
             li {
                 width: 50%;
             }
+
+            &.contact-info {
+                ul {
+                    justify-content: space-between;
+                }
+
+                li {
+                    width: auto;
+                }
+            }
         }
 
 
         @media (min-width: $bp-big) {
             padding-top: 5em;
+
+            &.contact-info {
+                margin-bottom: 2.5em;
+            }
+        }
+    }
+
+
+    // contact page
+    .page-contact-us & {
+        .text-block-header {
+            p {
+                margin: 0 0 1em;
+            }
+
+            @media (min-width: $bp-small) {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .header-content {
+                @media (min-width: $bp-small) {
+                    width: 100%;
+                    max-width: 50em;
+                    padding: 0 2em;
+                }
+            }
+        }
+
+        .gform_wrapper {
+            @media (min-width: $bp-small) {
+                padding: 0 0.5em;
+            }
+        }
+
+        .gform_footer {
+            .button {
+                margin-top: 0;
+            }
         }
     }
 }

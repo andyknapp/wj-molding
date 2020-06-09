@@ -14,11 +14,11 @@
 
 <footer class="site-footer">
     <div class="footer-content container-site">
-        <p>&copy; <?php echo date('Y'); ?> WJ Molding Inc. </p>
+        <p>&copy; <?php echo date('Y'); ?> WJ Molding Inc.</p>
         <ul>
-            <li>915 Estes Ct</li>
+            <li>915 Estes Court</li>
             <li>Schaumburg, IL 60193</li>
-            <li>800-PAT-CHEZ</li>
+            <li><a href="tel:1-847-895-6561" target="_blank">(847) 895-3600</a></li>
         </ul>
     </div>
 </footer><!-- #colophon -->

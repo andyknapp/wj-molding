@@ -23,6 +23,14 @@
         margin-bottom: 0.25em;
     }
 
+    a {
+        color: $color-black;
+
+        &:hover {
+            color: $color-blue-alt;
+        }
+    }
+
 
     @media (min-width: $bp-nav) {
         //cjustify-content: flex-end;

@@ -70,18 +70,53 @@ get_header();
         <?php endif; ?>
 
         <div class="text-block-body">
-            <aside class="sub-section">
-                <h2 class="heading-3">Our Core Competencies</h2>
-                <ul>
-                    <li>Straight Injection Molding</li>
-                    <li>Insert Molding</li>
-                    <li>Pre-Mold & Over Molding</li>
-                    <li>Wire Harness Molding</li>
-                    <li>Multi-Component Assembly</li>
-                    <li>Sonic & Vibration Welding</li>
-                    <li>Automation Development & Integration</li>
-                </ul>
-            </aside>
+
+            <?php if ( is_page( 'injection-molding' ) ) : ?>
+
+                <?php if ( have_rows( 'core_competencies' ) ) : ?>
+
+                    <aside class="sub-section">
+                        <h2 class="heading-3">Our Core Competencies</h2>
+                        <ul>
+                            <?php while ( have_rows( 'core_competencies' ) ) : the_row() ; ?>
+
+                                <li><?php echo get_sub_field( 'list_item' ); ?></li>
+
+                            <?php endwhile; ?>
+                        </ul>
+                    </aside>
+
+                <?php endif; ?>
+
+            <?php elseif ( is_page( 'contact-us' ) ) : ?>
+
+                <aside class="sub-section contact-info">
+                    <h2 class="heading-3">Contact Information</h2>
+                    <ul>
+                        <?php if ( get_field( 'phone' ) ) : ?>
+
+                            <li>Phone: <?php echo get_field( 'phone' ); ?></a></li>
+
+                        <?php endif; ?>
+
+                        <?php if ( get_field( 'fax' ) ) : ?>
+
+                            <li>Fax: <?php echo get_field( 'fax' ); ?></li>
+
+                        <?php endif; ?>
+
+                        <?php if ( get_field( 'email' ) ) : ?>
+                            <li>
+                                <a href="mailto:<?php echo get_field( 'email' ); ?>" target="_blank"><?php echo get_field( 'email' ); ?></a>
+                            </li>
+                        <?php endif; ?>
+
+                    </ul>
+                </aside>
+
+                <?php gravity_form( 1, false, false, false, '', false ); ?>
+
+            <?php endif; ?>
 
             <h3 class="heading-1">Tooling</h3>
             <p class="copy-1">Our in-house tooling capabilities and relationships with local suppliers means we’re able to meet the needs of any injection molding project. From quote to production, our customer-centric approach ensures on-time delivery of your tooling requirements. Our dedicated engineers provide full project management to ensure the optimal launch of your tooling.</p>

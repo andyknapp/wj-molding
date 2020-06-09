@@ -158,3 +158,13 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+
+function add_class_body( $classes ) {
+    global $post;
+
+    $page_name = 'page-' . $post->post_name;
+
+    return array_merge( $classes, array( $page_name ) );
+}
+add_filter( 'body_class', 'add_class_body' );
