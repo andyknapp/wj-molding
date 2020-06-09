@@ -21,7 +21,31 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-if ( $_SERVER['HTTP_HOST'] == 'wj-molding.test' ) {
+if ( $_SERVER['HTTP_HOST'] == 'wjmolding.com' ) {
+    define( 'DB_NAME', 'wj_prod' );
+    define( 'DB_USER', '' );
+    define( 'DB_PASSWORD', '' );
+    define( 'DB_HOST', '' );
+    define( 'DB_CHARSET', 'utf8' );
+    define( 'DB_COLLATE', '' );
+
+    define('DOMAIN_CURRENT_SITE', 'wjmolding.com');
+	define('WP_HOME','http://wjmolding.com');
+	define('WP_SITEURL','http://wjmolding.com');
+
+} else if ( $_SERVER['HTTP_HOST'] == 'wj.andyknapp.com') {
+    define( 'DB_NAME', 'db173289_wj_staging' );
+    define( 'DB_USER', 'db173289_user' );
+    define( 'DB_PASSWORD', '4?exf?1GnK_' );
+    define( 'DB_HOST', 'internal-db.s173289.gridserver.com' );
+    define( 'DB_CHARSET', 'utf8' );
+    define( 'DB_COLLATE', '' );
+
+    define('DOMAIN_CURRENT_SITE', 'wj.andyknapp.com');
+	define('WP_HOME','http://wj.andyknapp.com');
+	define('WP_SITEURL','http://wj.andyknapp.com');
+
+} else if ( $_SERVER['HTTP_HOST'] == 'wj-molding.test') {
     define( 'DB_NAME', 'wj_dev' );
     define( 'DB_USER', 'root' );
     define( 'DB_PASSWORD', 'root' );
@@ -33,6 +57,8 @@ if ( $_SERVER['HTTP_HOST'] == 'wj-molding.test' ) {
 	define('WP_HOME','http://wj-molding.test');
 	define('WP_SITEURL','http://wj-molding.test');
 }
+
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
