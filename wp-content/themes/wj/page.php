@@ -69,7 +69,6 @@ get_header();
             <?php endwhile; ?>
         <?php endif; ?>
 
-
         <div class="text-block-body">
             <aside class="sub-section">
                 <h2 class="heading-3">Our Core Competencies</h2>

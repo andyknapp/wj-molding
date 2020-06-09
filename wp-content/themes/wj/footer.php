@@ -31,7 +31,7 @@
 <script>
 	// load webfonts async
 	WebFontConfig = {
-		google: { families: [ 'Roboto+Condensed:300,400,700,700italic', 'Source+Sans+Pro:400,400italic,600,700,900' ] }
+		google: { families: [ 'Roboto+Condensed:300,400,700', 'Source+Sans+Pro:400,400italic,600,700,900' ] }
 	};
 	(function() {
 		var wf = document.createElement('script');

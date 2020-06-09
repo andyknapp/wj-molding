@@ -330,23 +330,6 @@ button:not(.no-button-style) {
 }
 
 /* line 4, ../sass/base/_mixins.scss */
-.hero-content p {
-  font-size: 0.875em;
-}
-@media screen and (min-width: 20em) {
-  /* line 4, ../sass/base/_mixins.scss */
-  .hero-content p {
-    font-size: calc(0.875em + 0.25 * (100vw - 20em) / 60);
-  }
-}
-@media screen and (min-width: 80em) {
-  /* line 4, ../sass/base/_mixins.scss */
-  .hero-content p {
-    font-size: 1.125em;
-  }
-}
-
-/* line 4, ../sass/base/_mixins.scss */
 figcaption, select.orderby, .site-footer p,
 .site-footer li {
   font-size: 0.75em;
@@ -909,15 +892,6 @@ img.aligncenter {
   margin: auto;
   padding: 0.5em;
   z-index: 1;
-}
-/* line 65, ../sass/components/_hero.scss */
-.hero-content p {
-  color: #f7f7f7;
-  font-style: italic;
-}
-/* line 70, ../sass/components/_hero.scss */
-.hero-content p:nth-of-type(1) {
-  margin-bottom: 0.5em;
 }
 
 /* line 76, ../sass/components/_hero.scss */
