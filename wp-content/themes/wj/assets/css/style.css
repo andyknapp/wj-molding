@@ -1252,22 +1252,22 @@ textarea:focus {
 /* line 33, ../sass/base/_mixins.scss */
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #707070;
+  color: #5e5e5e;
 }
 /* line 34, ../sass/base/_mixins.scss */
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #707070;
+  color: #5e5e5e;
 }
 /* line 35, ../sass/base/_mixins.scss */
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #707070;
+  color: #5e5e5e;
 }
 /* line 36, ../sass/base/_mixins.scss */
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #707070;
+  color: #5e5e5e;
 }
 
 /* line 32, ../sass/components/_forms.scss */
@@ -1314,6 +1314,12 @@ textarea::-webkit-input-placeholder {
 .site-content .gfield {
   margin-bottom: 1.5em;
   font-size: 1em;
+}
+/* line 77, ../sass/components/_forms.scss */
+.site-content .gfield_label {
+  padding: 0 0 0.125em 0.6666666667em;
+  font-size: 75%;
+  color: #707070;
 }
 
 /* line 1, ../sass/components/_buttons.scss */

@@ -24,7 +24,7 @@ textarea {
 	@extend %input;
 
 	@include placeholder {
-		color: $color-gray;
+		color: lighten($color-black-2, 10%);
 	}
 }
 
@@ -72,6 +72,12 @@ textarea {
     .gfield {
     	margin-bottom: 1.5em;
         font-size: 1em;
+    }
+
+    .gfield_label {
+        padding: 0 0 0.125em (8 / 12) * 1em;
+        font-size: 75%;
+        color: $color-gray;
     }
 }
 
