@@ -45,6 +45,25 @@
                 padding-right: 5em;
             }
         }
+
+        &.no-img {
+            p {
+                margin: 0 0 1em;
+            }
+
+            @media (min-width: $bp-small) {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .header-content {
+                @media (min-width: $bp-small) {
+                    width: 100%;
+                    max-width: 50em;
+                    padding: 0 2em;
+                }
+            }
+        }
     }
 
 
@@ -249,24 +268,24 @@
 
     // contact page
     .page-contact-us & {
-        .text-block-header {
-            p {
-                margin: 0 0 1em;
-            }
-
-            @media (min-width: $bp-small) {
-                justify-content: center;
-                text-align: center;
-            }
-
-            .header-content {
-                @media (min-width: $bp-small) {
-                    width: 100%;
-                    max-width: 50em;
-                    padding: 0 2em;
-                }
-            }
-        }
+        // .text-block-header {
+        //     p {
+        //         margin: 0 0 1em;
+        //     }
+        //
+        //     @media (min-width: $bp-small) {
+        //         justify-content: center;
+        //         text-align: center;
+        //     }
+        //
+        //     .header-content {
+        //         @media (min-width: $bp-small) {
+        //             width: 100%;
+        //             max-width: 50em;
+        //             padding: 0 2em;
+        //         }
+        //     }
+        // }
 
         .gform_wrapper {
             @media (min-width: $bp-small) {

@@ -982,7 +982,26 @@ img.aligncenter {
     padding-right: 5em;
   }
 }
-/* line 51, ../sass/components/_text-block.scss */
+/* line 50, ../sass/components/_text-block.scss */
+.text-block .text-block-header.no-img p {
+  margin: 0 0 1em;
+}
+@media (min-width: 40em) {
+  /* line 49, ../sass/components/_text-block.scss */
+  .text-block .text-block-header.no-img {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (min-width: 40em) {
+  /* line 59, ../sass/components/_text-block.scss */
+  .text-block .text-block-header.no-img .header-content {
+    width: 100%;
+    max-width: 50em;
+    padding: 0 2em;
+  }
+}
+/* line 70, ../sass/components/_text-block.scss */
 .text-block .text-block-content {
   width: 100%;
   max-width: 55em;
@@ -990,118 +1009,118 @@ img.aligncenter {
   padding: 4em 0;
   z-index: 1;
 }
-/* line 60, ../sass/components/_text-block.scss */
+/* line 79, ../sass/components/_text-block.scss */
 .text-block.wide .text-block-content {
   max-width: 64em;
 }
-/* line 64, ../sass/components/_text-block.scss */
+/* line 83, ../sass/components/_text-block.scss */
 .text-block.wide .text-block-body {
   width: 100%;
   max-width: 60em;
   margin: 0 auto;
 }
-/* line 72, ../sass/components/_text-block.scss */
+/* line 91, ../sass/components/_text-block.scss */
 .text-block li {
   margin-bottom: 0.5em;
 }
-/* line 77, ../sass/components/_text-block.scss */
+/* line 96, ../sass/components/_text-block.scss */
 .text-block.plain {
   background: linear-gradient(to top, #f7f7f7, #eee);
 }
-/* line 80, ../sass/components/_text-block.scss */
+/* line 99, ../sass/components/_text-block.scss */
 .text-block.plain::before, .text-block.plain::after {
   display: none;
 }
-/* line 86, ../sass/components/_text-block.scss */
+/* line 105, ../sass/components/_text-block.scss */
 .text-block.closing {
   min-height: 70vh;
   background-color: #eee;
   background: linear-gradient(to bottom left, #cbcbcb, #f7f7f7);
 }
-/* line 91, ../sass/components/_text-block.scss */
+/* line 110, ../sass/components/_text-block.scss */
 .text-block.closing .text-block-content {
   max-width: 42.5em;
 }
-/* line 95, ../sass/components/_text-block.scss */
+/* line 114, ../sass/components/_text-block.scss */
 .text-block.closing::before {
   height: calc(100% + 5em);
 }
-/* line 99, ../sass/components/_text-block.scss */
+/* line 118, ../sass/components/_text-block.scss */
 .text-block.closing::after {
   height: calc(100% + 10em);
 }
 @media (min-width: 57em) {
-  /* line 104, ../sass/components/_text-block.scss */
+  /* line 123, ../sass/components/_text-block.scss */
   .text-block.closing::before, .text-block.closing::after {
     height: calc(100% + 5em);
   }
 }
-/* line 112, ../sass/components/_text-block.scss */
+/* line 131, ../sass/components/_text-block.scss */
 .text-block.gray-cone::before {
   background: transparent url(../img/bg-drawing-cone-b-small.jpg) no-repeat left bottom/cover;
   filter: grayscale(1);
   opacity: 0.25;
 }
 @media (min-width: 50em) {
-  /* line 112, ../sass/components/_text-block.scss */
+  /* line 131, ../sass/components/_text-block.scss */
   .text-block.gray-cone::before {
     background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center bottom/cover;
   }
 }
-/* line 123, ../sass/components/_text-block.scss */
+/* line 142, ../sass/components/_text-block.scss */
 .text-block.gray-cone-b {
   background: radial-gradient(#f7f7f7, #cbcbcb);
 }
-/* line 126, ../sass/components/_text-block.scss */
+/* line 145, ../sass/components/_text-block.scss */
 .text-block.gray-cone-b::before {
   background: transparent url(../img/bg-drawing-cone.jpg) no-repeat center/cover;
   filter: grayscale(1);
   opacity: 0.125;
 }
-/* line 146, ../sass/components/_text-block.scss */
+/* line 165, ../sass/components/_text-block.scss */
 .text-block.small-cone::before {
   width: 25%;
   background: transparent url(../img/bg-drawing-c.jpg) no-repeat left bottom/contain;
   filter: grayscale(1);
   opacity: 0.12;
 }
-/* line 154, ../sass/components/_text-block.scss */
+/* line 173, ../sass/components/_text-block.scss */
 .text-block.sub-page {
   padding-bottom: 2em;
 }
-/* line 157, ../sass/components/_text-block.scss */
+/* line 176, ../sass/components/_text-block.scss */
 .text-block.sub-page .heading-1 {
   margin: 1em 0 0.35em;
 }
 @media (min-width: 50em) {
-  /* line 161, ../sass/components/_text-block.scss */
+  /* line 180, ../sass/components/_text-block.scss */
   .text-block.sub-page .text-block-content {
     padding-top: 6em;
   }
 }
-/* line 167, ../sass/components/_text-block.scss */
+/* line 186, ../sass/components/_text-block.scss */
 .text-block.sub-page .button {
   margin: 2em 0 0;
   box-shadow: none;
 }
-/* line 176, ../sass/components/_text-block.scss */
+/* line 195, ../sass/components/_text-block.scss */
 .text-block .sub-section {
   padding: 2.5em 0 1em;
 }
-/* line 179, ../sass/components/_text-block.scss */
+/* line 198, ../sass/components/_text-block.scss */
 .text-block .sub-section .heading-3 {
   border-bottom: 1px solid #cbcbcb;
 }
-/* line 183, ../sass/components/_text-block.scss */
+/* line 202, ../sass/components/_text-block.scss */
 .text-block .sub-section ul {
   padding: 0.5em 0.5em 0;
 }
-/* line 188, ../sass/components/_text-block.scss */
+/* line 207, ../sass/components/_text-block.scss */
 .text-block .sub-section:not(.contact-info) li {
   position: relative;
   padding-left: 1em;
 }
-/* line 192, ../sass/components/_text-block.scss */
+/* line 211, ../sass/components/_text-block.scss */
 .text-block .sub-section:not(.contact-info) li::before {
   content: '\2022';
   display: inline-block;
@@ -1112,73 +1131,54 @@ img.aligncenter {
   transform: translateY(calc(-50% - 2px));
   color: #707070;
 }
-/* line 205, ../sass/components/_text-block.scss */
+/* line 224, ../sass/components/_text-block.scss */
 .text-block .sub-section.contact-info {
   margin-bottom: 1em;
 }
-/* line 208, ../sass/components/_text-block.scss */
+/* line 227, ../sass/components/_text-block.scss */
 .text-block .sub-section.contact-info a {
   color: #040910;
 }
-/* line 211, ../sass/components/_text-block.scss */
+/* line 230, ../sass/components/_text-block.scss */
 .text-block .sub-section.contact-info a:hover {
   color: #23417a;
 }
 @media (min-width: 40em) {
-  /* line 219, ../sass/components/_text-block.scss */
+  /* line 238, ../sass/components/_text-block.scss */
   .text-block .sub-section ul {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 224, ../sass/components/_text-block.scss */
+  /* line 243, ../sass/components/_text-block.scss */
   .text-block .sub-section li {
     width: 50%;
   }
-  /* line 229, ../sass/components/_text-block.scss */
+  /* line 248, ../sass/components/_text-block.scss */
   .text-block .sub-section.contact-info ul {
     justify-content: space-between;
   }
-  /* line 233, ../sass/components/_text-block.scss */
+  /* line 252, ../sass/components/_text-block.scss */
   .text-block .sub-section.contact-info li {
     width: auto;
   }
 }
 @media (min-width: 72em) {
-  /* line 176, ../sass/components/_text-block.scss */
+  /* line 195, ../sass/components/_text-block.scss */
   .text-block .sub-section {
     padding-top: 5em;
   }
-  /* line 243, ../sass/components/_text-block.scss */
+  /* line 262, ../sass/components/_text-block.scss */
   .text-block .sub-section.contact-info {
     margin-bottom: 2.5em;
   }
 }
-/* line 253, ../sass/components/_text-block.scss */
-.page-contact-us .text-block .text-block-header p {
-  margin: 0 0 1em;
-}
 @media (min-width: 40em) {
-  /* line 252, ../sass/components/_text-block.scss */
-  .page-contact-us .text-block .text-block-header {
-    justify-content: center;
-    text-align: center;
-  }
-}
-@media (min-width: 40em) {
-  /* line 262, ../sass/components/_text-block.scss */
-  .page-contact-us .text-block .text-block-header .header-content {
-    width: 100%;
-    max-width: 50em;
-    padding: 0 2em;
-  }
-}
-@media (min-width: 40em) {
-  /* line 271, ../sass/components/_text-block.scss */
+  /* line 290, ../sass/components/_text-block.scss */
   .page-contact-us .text-block .gform_wrapper {
     padding: 0 0.5em;
   }
 }
-/* line 278, ../sass/components/_text-block.scss */
+/* line 297, ../sass/components/_text-block.scss */
 .page-contact-us .text-block .gform_footer .button {
   margin-top: 0;
 }
@@ -1190,8 +1190,8 @@ img.aligncenter {
   max-height: 30vw;
   overflow: hidden;
 }
-/* line 7, ../sass/components/_fixed-bg-block.scss */
-.fixed-bg-block::before, .fixed-bg-block::after {
+/* line 8, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block:not(.big)::before, .fixed-bg-block:not(.big)::after {
   content: '';
   display: block;
   position: fixed;
@@ -1201,26 +1201,58 @@ img.aligncenter {
   height: calc(100% - 4em);
   z-index: -1;
 }
-/* line 19, ../sass/components/_fixed-bg-block.scss */
-.fixed-bg-block::before {
+/* line 20, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block:not(.big)::before {
   background: transparent url(../img/wj-molding-250-ton-all-electric.jpg);
+  background: transparent url(../img/wj-molding-machines.jpg);
   background-attachment: fixed;
   background-size: cover;
   filter: blur(0.5px);
 }
-/* line 27, ../sass/components/_fixed-bg-block.scss */
-.fixed-bg-block::after {
+/* line 28, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block:not(.big)::after {
   background-color: #f7f7f7;
   opacity: 0.15;
 }
-/* line 32, ../sass/components/_fixed-bg-block.scss */
+/* line 34, ../sass/components/_fixed-bg-block.scss */
 .fixed-bg-block .button {
   margin: auto;
 }
-/* line 36, ../sass/components/_fixed-bg-block.scss */
+/* line 39, ../sass/components/_fixed-bg-block.scss */
 .fixed-bg-block.big {
   height: 66.67vh;
   max-height: none;
+}
+/* line 43, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block.big .container {
+  position: fixed;
+  top: 4em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4em);
+  z-index: -1;
+}
+/* line 52, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block.big .container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  opacity: 0.15;
+}
+/* line 65, ../sass/components/_fixed-bg-block.scss */
+.fixed-bg-block.big img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 @media (min-width: 72em) {
   /* line 1, ../sass/components/_fixed-bg-block.scss */

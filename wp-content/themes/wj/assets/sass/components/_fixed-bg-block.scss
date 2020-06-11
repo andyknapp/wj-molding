@@ -4,39 +4,72 @@
     max-height: 30vw;
     overflow: hidden;
 
-    &::before,
-    &::after {
-        content: '';
-        display: block;
-        position: fixed;
-        top: $header-height;
-        left: 0;
-        width: 100%;
-        height: calc(100% - 4em);
-        z-index: -1;
-    }
+    &:not(.big) {
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            position: fixed;
+            top: $header-height;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 4em);
+            z-index: -1;
+        }
 
-    &::before {
-        background: transparent url(../img/wj-molding-250-ton-all-electric.jpg);
-        //background: transparent url(../img/wj-molding-machines.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        filter: blur(0.5px);
-    }
+        &::before {
+            background: transparent url(../img/wj-molding-250-ton-all-electric.jpg);
+            background: transparent url(../img/wj-molding-machines.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            filter: blur(0.5px);
+        }
 
-    &::after {
-        background-color: $color-white;
-        opacity: 0.15;
+        &::after {
+            background-color: $color-white;
+            opacity: 0.15;
+        }
     }
 
     .button {
         margin: auto;
     }
 
+
     &.big {
         height: 66.67vh;
-        //height: calc(100vh - 10em);
         max-height: none;
+
+        .container {
+            position: fixed;
+            top: $header-height;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 4em);
+            z-index: -1;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $color-white;
+                opacity: 0.15;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
 
