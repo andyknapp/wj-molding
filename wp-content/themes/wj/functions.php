@@ -132,7 +132,7 @@ function wj_scripts() {
 	wp_deregister_script('jquery');
 
     // and load in the footer
-    //wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), false, NULL, true);
+    wp_register_script('jquery', includes_url('/js/jquery/jquery.js'), false, NULL, true);
 
     // wp-embeds.min.js no longer needed
     wp_deregister_script('wp-embed');
@@ -140,6 +140,10 @@ function wj_scripts() {
     wp_register_script('global-js', get_stylesheet_directory_uri() . '/assets/js/global.js', array(), THEME_VERSION, true);
 
     wp_enqueue_script('global-js');
+
+    if (is_page( 'contact-us') ) {
+        wp_enqueue_script('jquery');
+    }
 
 }
 add_action( 'wp_enqueue_scripts', 'wj_scripts' );
@@ -168,3 +172,9 @@ function add_class_body( $classes ) {
     return array_merge( $classes, array( $page_name ) );
 }
 add_filter( 'body_class', 'add_class_body' );
+
+// Move Gravity forms jQuery calls to footer
+function init_scripts() {
+	return true;
+}
+add_filter('gform_init_scripts_footer', 'init_scripts');
