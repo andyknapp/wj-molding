@@ -149,18 +149,6 @@
         }
     }
 
-    // &.green-cone {
-    //     &::before {
-    //         background: transparent url(../img/bg-drawing-cone-b.jpg) no-repeat center / cover;
-    //         filter: grayscale(1);
-    //         opacity: 0.12;
-    //     }
-    //
-    //     &::after {
-    //         background-color: rgba($color-green, 0.1);
-    //     }
-    // }
-
     &.small-cone {
         &::before {
             width: 25%;
@@ -172,6 +160,8 @@
 
     &.sub-page {
         padding-bottom: 2em;
+        background: white;
+        box-shadow: 0 4px 6px -2px rgba(0,0,0,.15);
 
         .heading-1 {
             margin: 1em 0 0.35em;

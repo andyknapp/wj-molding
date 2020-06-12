@@ -1077,50 +1077,52 @@ img.aligncenter {
   filter: grayscale(1);
   opacity: 0.125;
 }
-/* line 165, ../sass/components/_text-block.scss */
+/* line 153, ../sass/components/_text-block.scss */
 .text-block.small-cone::before {
   width: 25%;
   background: transparent url(../img/bg-drawing-c.jpg) no-repeat left bottom/contain;
   filter: grayscale(1);
   opacity: 0.12;
 }
-/* line 173, ../sass/components/_text-block.scss */
+/* line 161, ../sass/components/_text-block.scss */
 .text-block.sub-page {
   padding-bottom: 2em;
+  background: white;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.15);
 }
-/* line 176, ../sass/components/_text-block.scss */
+/* line 166, ../sass/components/_text-block.scss */
 .text-block.sub-page .heading-1 {
   margin: 1em 0 0.35em;
 }
 @media (min-width: 50em) {
-  /* line 180, ../sass/components/_text-block.scss */
+  /* line 170, ../sass/components/_text-block.scss */
   .text-block.sub-page .text-block-content {
     padding-top: 6em;
   }
 }
-/* line 186, ../sass/components/_text-block.scss */
+/* line 176, ../sass/components/_text-block.scss */
 .text-block.sub-page .button {
   margin: 2em 0 0;
   box-shadow: none;
 }
-/* line 195, ../sass/components/_text-block.scss */
+/* line 185, ../sass/components/_text-block.scss */
 .text-block .sub-section {
   padding: 2.5em 0 1em;
 }
-/* line 198, ../sass/components/_text-block.scss */
+/* line 188, ../sass/components/_text-block.scss */
 .text-block .sub-section .heading-3 {
   border-bottom: 1px solid #cbcbcb;
 }
-/* line 202, ../sass/components/_text-block.scss */
+/* line 192, ../sass/components/_text-block.scss */
 .text-block .sub-section ul {
   padding: 0.5em 0.5em 0;
 }
-/* line 207, ../sass/components/_text-block.scss */
+/* line 197, ../sass/components/_text-block.scss */
 .text-block .sub-section:not(.contact-info) li {
   position: relative;
   padding-left: 1em;
 }
-/* line 211, ../sass/components/_text-block.scss */
+/* line 201, ../sass/components/_text-block.scss */
 .text-block .sub-section:not(.contact-info) li::before {
   content: '\2022';
   display: inline-block;
@@ -1131,54 +1133,54 @@ img.aligncenter {
   transform: translateY(calc(-50% - 2px));
   color: #707070;
 }
-/* line 224, ../sass/components/_text-block.scss */
+/* line 214, ../sass/components/_text-block.scss */
 .text-block .sub-section.contact-info {
   margin-bottom: 1em;
 }
-/* line 227, ../sass/components/_text-block.scss */
+/* line 217, ../sass/components/_text-block.scss */
 .text-block .sub-section.contact-info a {
   color: #040910;
 }
-/* line 230, ../sass/components/_text-block.scss */
+/* line 220, ../sass/components/_text-block.scss */
 .text-block .sub-section.contact-info a:hover {
   color: #23417a;
 }
 @media (min-width: 40em) {
-  /* line 238, ../sass/components/_text-block.scss */
+  /* line 228, ../sass/components/_text-block.scss */
   .text-block .sub-section ul {
     display: flex;
     flex-flow: row wrap;
   }
-  /* line 243, ../sass/components/_text-block.scss */
+  /* line 233, ../sass/components/_text-block.scss */
   .text-block .sub-section li {
     width: 50%;
   }
-  /* line 248, ../sass/components/_text-block.scss */
+  /* line 238, ../sass/components/_text-block.scss */
   .text-block .sub-section.contact-info ul {
     justify-content: space-between;
   }
-  /* line 252, ../sass/components/_text-block.scss */
+  /* line 242, ../sass/components/_text-block.scss */
   .text-block .sub-section.contact-info li {
     width: auto;
   }
 }
 @media (min-width: 72em) {
-  /* line 195, ../sass/components/_text-block.scss */
+  /* line 185, ../sass/components/_text-block.scss */
   .text-block .sub-section {
     padding-top: 5em;
   }
-  /* line 262, ../sass/components/_text-block.scss */
+  /* line 252, ../sass/components/_text-block.scss */
   .text-block .sub-section.contact-info {
     margin-bottom: 2.5em;
   }
 }
 @media (min-width: 40em) {
-  /* line 290, ../sass/components/_text-block.scss */
+  /* line 280, ../sass/components/_text-block.scss */
   .page-contact-us .text-block .gform_wrapper {
     padding: 0 0.5em;
   }
 }
-/* line 297, ../sass/components/_text-block.scss */
+/* line 287, ../sass/components/_text-block.scss */
 .page-contact-us .text-block .gform_footer .button {
   margin-top: 0;
 }
@@ -1246,7 +1248,8 @@ img.aligncenter {
   opacity: 0.15;
 }
 /* line 65, ../sass/components/_fixed-bg-block.scss */
-.fixed-bg-block.big img {
+.fixed-bg-block.big img,
+.fixed-bg-block.big iframe {
   position: absolute;
   top: 0;
   left: 0;
