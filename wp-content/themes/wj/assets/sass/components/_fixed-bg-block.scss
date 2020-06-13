@@ -4,7 +4,7 @@
     max-height: 30vw;
     overflow: hidden;
 
-    &:not(.big) {
+    &:not(.big):not(.button-only) {
         &::before,
         &::after {
             content: '';
@@ -73,6 +73,10 @@
         }
     }
 
+
+    &.button-only {
+        background-color: $color-white;
+    }
 
     @media (min-width: $bp-big) {
         height: 10em;

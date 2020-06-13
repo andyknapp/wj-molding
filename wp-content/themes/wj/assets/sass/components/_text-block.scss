@@ -30,10 +30,6 @@
                 padding: 0;
             }
 
-            .copy-2 {
-                margin: 1em 0 0;
-            }
-
             .header-content {
                 width: 60%;
                 padding: 0 2em 0 0;
@@ -161,7 +157,7 @@
     &.sub-page {
         padding-bottom: 2em;
         background: white;
-        box-shadow: 0 4px 6px -2px rgba(0,0,0,.15);
+        box-shadow: 0 4px 6px -2px rgba(0,0,0,.05);
 
         .heading-1 {
             margin: 1em 0 0.35em;
@@ -197,16 +193,17 @@
             li {
                 position: relative;
                 padding-left: 1em;
+                line-height: 1.2;
 
                 &::before {
                     content: '\2022';
                     display: inline-block;
                     position: absolute;
                     left: 0;
-                    top: 50%;
+                    top: 0.025em;
                     font-size: 120%;
-                    transform: translateY( calc(-50% - 2px) );
                     color: $color-gray;
+                    line-height: 1;
                 }
             }
         }
