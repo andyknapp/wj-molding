@@ -2,7 +2,7 @@
   "name": "Web-Project",
   "version": "1.0.0",
   "devDependencies": {
-    "grunt": "^1.1.0",
+    "grunt": "^1.3.0",
     "grunt-autoprefixer": "*",
     "grunt-browser-sync": "*",
     "grunt-contrib-concat": "*",
